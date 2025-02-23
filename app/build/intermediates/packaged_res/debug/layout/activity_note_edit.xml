@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteEditActivity"
+    android:background="#98C4FF">
+
+    <TextView
+        android:id="@+id/tv_editNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/lora"
+        android:text="Редактирование заметки"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guideline44"
+        app:layout_constraintEnd_toEndOf="@id/guideline45"
+        app:layout_constraintTop_toTopOf="@id/guideline46" />
+    <!-- Текст настроения -->
+    <TextView
+        android:id="@+id/note_mood_editNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lora"
+        android:text="Крутое"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/guideline44"
+        app:layout_constraintTop_toBottomOf="@id/tv_editNote" />
+
+    <!-- Текст даты -->
+    <TextView
+        android:id="@+id/note_date_editNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lora"
+        android:text="Дата"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/guideline44"
+        app:layout_constraintTop_toBottomOf="@id/note_mood_editNote" />
+    <EditText
+        android:id="@+id/et_editNote"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/lora"
+        android:gravity="top|start"
+        android:hint="Введите вашу заметку..."
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@id/guideline44"
+        app:layout_constraintEnd_toEndOf="@id/guideline45"
+        app:layout_constraintTop_toBottomOf="@id/note_date_editNote"/>
+    <Button
+        android:id="@+id/cancelButton_editNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отменить"
+        android:fontFamily="@font/lora"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF4A90E2"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/guideline44"
+        app:layout_constraintEnd_toEndOf="@id/guideline45"
+        app:layout_constraintTop_toBottomOf="@id/et_editNote"/>
+    <Button
+        android:id="@+id/saveButton_editNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:fontFamily="@font/lora"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF4A90E2"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/guideline44"
+        app:layout_constraintEnd_toEndOf="@id/guideline45"
+        app:layout_constraintTop_toBottomOf="@id/cancelButton_editNote"/>
+    <Button
+        android:id="@+id/deleteButton_editNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:fontFamily="@font/lora"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF4A90E2"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/guideline44"
+        app:layout_constraintEnd_toEndOf="@id/guideline45"
+        app:layout_constraintTop_toBottomOf="@id/saveButton_editNote"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

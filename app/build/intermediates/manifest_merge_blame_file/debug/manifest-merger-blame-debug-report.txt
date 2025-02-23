@@ -1,0 +1,539 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.calmsea"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\Mobilka\app\src\main\AndroidManifest.xml:5:5-67
+11-->E:\Mobilka\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->E:\Mobilka\app\src\main\AndroidManifest.xml:6:5-79
+12-->E:\Mobilka\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->E:\Mobilka\app\src\main\AndroidManifest.xml:8:5-76
+13-->E:\Mobilka\app\src\main\AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+14-->E:\Mobilka\app\src\main\AndroidManifest.xml:9:5-76
+14-->E:\Mobilka\app\src\main\AndroidManifest.xml:9:22-73
+15    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+15-->E:\Mobilka\app\src\main\AndroidManifest.xml:10:5-71
+15-->E:\Mobilka\app\src\main\AndroidManifest.xml:10:22-68
+16    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+16-->E:\Mobilka\app\src\main\AndroidManifest.xml:11:5-74
+16-->E:\Mobilka\app\src\main\AndroidManifest.xml:11:22-71
+17    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+17-->E:\Mobilka\app\src\main\AndroidManifest.xml:12:5-74
+17-->E:\Mobilka\app\src\main\AndroidManifest.xml:12:22-71
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+18-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:23:5-77
+18-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:23:22-74
+19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+19-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:24:5-68
+19-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:24:22-65
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:5-82
+20-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:22-79
+21    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+21-->[com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:9:5-98
+21-->[com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:9:22-95
+22
+23    <permission
+23-->[androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.calmsea.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.calmsea.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->E:\Mobilka\app\src\main\AndroidManifest.xml:16:5-60:19
+30        android:allowBackup="true"
+30-->E:\Mobilka\app\src\main\AndroidManifest.xml:17:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+32        android:dataExtractionRules="@xml/data_extraction_rules"
+32-->E:\Mobilka\app\src\main\AndroidManifest.xml:18:9-65
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:fullBackupContent="@xml/backup_rules"
+35-->E:\Mobilka\app\src\main\AndroidManifest.xml:19:9-54
+36        android:icon="@mipmap/ic_launcher"
+36-->E:\Mobilka\app\src\main\AndroidManifest.xml:20:9-43
+37        android:label="@string/app_name"
+37-->E:\Mobilka\app\src\main\AndroidManifest.xml:21:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->E:\Mobilka\app\src\main\AndroidManifest.xml:22:9-54
+39        android:supportsRtl="true"
+39-->E:\Mobilka\app\src\main\AndroidManifest.xml:23:9-35
+40        android:testOnly="true"
+41        android:theme="@style/Theme.CalmSea" >
+41-->E:\Mobilka\app\src\main\AndroidManifest.xml:24:9-45
+42        <activity
+42-->E:\Mobilka\app\src\main\AndroidManifest.xml:28:9-30:40
+43            android:name="com.example.calmsea.NoteEditActivity"
+43-->E:\Mobilka\app\src\main\AndroidManifest.xml:29:13-45
+44            android:exported="false" />
+44-->E:\Mobilka\app\src\main\AndroidManifest.xml:30:13-37
+45        <activity
+45-->E:\Mobilka\app\src\main\AndroidManifest.xml:31:9-33:40
+46            android:name="com.example.calmsea.EditActivity"
+46-->E:\Mobilka\app\src\main\AndroidManifest.xml:32:13-41
+47            android:exported="false" />
+47-->E:\Mobilka\app\src\main\AndroidManifest.xml:33:13-37
+48        <activity
+48-->E:\Mobilka\app\src\main\AndroidManifest.xml:34:9-36:40
+49            android:name="com.example.calmsea.MoodQuestionActivity"
+49-->E:\Mobilka\app\src\main\AndroidManifest.xml:35:13-49
+50            android:exported="false" />
+50-->E:\Mobilka\app\src\main\AndroidManifest.xml:36:13-37
+51        <activity
+51-->E:\Mobilka\app\src\main\AndroidManifest.xml:37:9-39:40
+52            android:name="com.example.calmsea.AddNoteActivity"
+52-->E:\Mobilka\app\src\main\AndroidManifest.xml:38:13-44
+53            android:exported="false" />
+53-->E:\Mobilka\app\src\main\AndroidManifest.xml:39:13-37
+54        <activity
+54-->E:\Mobilka\app\src\main\AndroidManifest.xml:40:9-42:40
+55            android:name="com.example.calmsea.CalendarActivity"
+55-->E:\Mobilka\app\src\main\AndroidManifest.xml:41:13-45
+56            android:exported="false" />
+56-->E:\Mobilka\app\src\main\AndroidManifest.xml:42:13-37
+57        <activity
+57-->E:\Mobilka\app\src\main\AndroidManifest.xml:43:9-45:40
+58            android:name="com.example.calmsea.RegistrationActivity"
+58-->E:\Mobilka\app\src\main\AndroidManifest.xml:44:13-49
+59            android:exported="false" />
+59-->E:\Mobilka\app\src\main\AndroidManifest.xml:45:13-37
+60        <activity
+60-->E:\Mobilka\app\src\main\AndroidManifest.xml:46:9-48:40
+61            android:name="com.example.calmsea.AuthActivity"
+61-->E:\Mobilka\app\src\main\AndroidManifest.xml:47:13-41
+62            android:exported="false" />
+62-->E:\Mobilka\app\src\main\AndroidManifest.xml:48:13-37
+63        <activity
+63-->E:\Mobilka\app\src\main\AndroidManifest.xml:49:9-58:20
+64            android:name="com.example.calmsea.WelcomeActivity"
+64-->E:\Mobilka\app\src\main\AndroidManifest.xml:50:13-44
+65            android:exported="true"
+65-->E:\Mobilka\app\src\main\AndroidManifest.xml:51:13-36
+66            android:theme="@style/Theme.Design.NoActionBar" >
+66-->E:\Mobilka\app\src\main\AndroidManifest.xml:52:13-60
+67            <intent-filter>
+67-->E:\Mobilka\app\src\main\AndroidManifest.xml:53:13-57:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->E:\Mobilka\app\src\main\AndroidManifest.xml:54:17-69
+68-->E:\Mobilka\app\src\main\AndroidManifest.xml:54:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->E:\Mobilka\app\src\main\AndroidManifest.xml:56:17-77
+70-->E:\Mobilka\app\src\main\AndroidManifest.xml:56:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity android:name="com.example.calmsea.MainActivity" />
+73-->E:\Mobilka\app\src\main\AndroidManifest.xml:59:9-50
+73-->E:\Mobilka\app\src\main\AndroidManifest.xml:59:19-47
+74
+75        <service
+75-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:14:9-23:19
+76            android:name="com.google.firebase.components.ComponentDiscoveryService"
+76-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:15:13-84
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+78            android:exported="false" >
+78-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:16:13-37
+79            <meta-data
+79-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:17:13-19:85
+80                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+80-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:18:17-122
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:19:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:20:13-22:85
+83                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+83-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:21:17-111
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:22:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:69:13-71:85
+86                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+86-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:70:17-109
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:71:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+89                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+89-->[com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+91            <meta-data
+91-->[com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+92                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+92-->[com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:57:13-59:85
+95                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+95-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:58:17-122
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:59:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:60:13-62:85
+98                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+98-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:61:17-119
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:62:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+101                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+101-->[com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+104                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+104-->[com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+107                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+107-->[com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+110                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+110-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+113                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+113-->[com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+115        </service>
+116
+117        <activity
+117-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:29:9-46:20
+118            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+118-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:30:13-80
+119            android:excludeFromRecents="true"
+119-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:31:13-46
+120            android:exported="true"
+120-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:32:13-36
+121            android:launchMode="singleTask"
+121-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:33:13-44
+122            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+122-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:34:13-72
+123            <intent-filter>
+123-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:35:13-45:29
+124                <action android:name="android.intent.action.VIEW" />
+124-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+124-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+126-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+127                <category android:name="android.intent.category.BROWSABLE" />
+127-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+127-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+128
+129                <data
+129-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+130                    android:host="firebase.auth"
+130-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+131                    android:path="/"
+131-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+132                    android:scheme="genericidp" />
+132-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+133            </intent-filter>
+134        </activity>
+135        <activity
+135-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:47:9-64:20
+136            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+136-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:48:13-79
+137            android:excludeFromRecents="true"
+137-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:49:13-46
+138            android:exported="true"
+138-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:50:13-36
+139            android:launchMode="singleTask"
+139-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:51:13-44
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+140-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:52:13-72
+141            <intent-filter>
+141-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:53:13-63:29
+142                <action android:name="android.intent.action.VIEW" />
+142-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+142-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+143
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+144-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+145                <category android:name="android.intent.category.BROWSABLE" />
+145-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+145-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+146
+147                <data
+147-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+148                    android:host="firebase.auth"
+148-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+149                    android:path="/"
+149-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+150                    android:scheme="recaptcha" />
+150-->[com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+151            </intent-filter>
+152        </activity>
+153
+154        <provider
+154-->[com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+155            android:name="com.squareup.picasso.PicassoProvider"
+155-->[com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+156            android:authorities="com.example.calmsea.com.squareup.picasso"
+156-->[com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+157            android:exported="false" />
+157-->[com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+158
+159        <receiver
+159-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:29:9-40:20
+160            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+160-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:30:13-78
+161            android:exported="true"
+161-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:31:13-36
+162            android:permission="com.google.android.c2dm.permission.SEND" >
+162-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:32:13-73
+163            <intent-filter>
+163-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:33:13-35:29
+164                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+164-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:34:17-81
+164-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:34:25-78
+165            </intent-filter>
+166
+167            <meta-data
+167-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:37:13-39:40
+168                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+168-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:38:17-92
+169                android:value="true" />
+169-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:39:17-37
+170        </receiver>
+171        <!--
+172             FirebaseMessagingService performs security checks at runtime,
+173             but set to not exported to explicitly avoid allowing another app to call it.
+174        -->
+175        <service
+175-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:46:9-53:19
+176            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+176-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:47:13-82
+177            android:directBootAware="true"
+177-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:48:13-43
+178            android:exported="false" >
+178-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:49:13-37
+179            <intent-filter android:priority="-500" >
+179-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:50:13-52:29
+179-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:50:28-51
+180                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+180-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:51:17-78
+180-->[com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:51:25-75
+181            </intent-filter>
+182        </service>
+183        <service
+183-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+184            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+184-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+185            android:enabled="true"
+185-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+186            android:exported="false" >
+186-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+187            <meta-data
+187-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+188                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+188-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+189                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+189-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+190        </service>
+191
+192        <activity
+192-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+193            android:name="androidx.credentials.playservices.HiddenActivity"
+193-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+194            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+194-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+195            android:enabled="true"
+195-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+196            android:exported="false"
+196-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+197            android:fitsSystemWindows="true"
+197-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+198            android:theme="@style/Theme.Hidden" >
+198-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+199        </activity>
+200        <activity
+200-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+201            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+201-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+202            android:excludeFromRecents="true"
+202-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+203            android:exported="false"
+203-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+204            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+204-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+205        <!--
+206            Service handling Google Sign-In user revocation. For apps that do not integrate with
+207            Google Sign-In, this service will never be started.
+208        -->
+209        <service
+209-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+210            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+210-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+211            android:exported="true"
+211-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+212            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+212-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+213            android:visibleToInstantApps="true" />
+213-->[com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+214
+215        <provider
+215-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+216            android:name="com.google.firebase.provider.FirebaseInitProvider"
+216-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+217            android:authorities="com.example.calmsea.firebaseinitprovider"
+217-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+218            android:directBootAware="true"
+218-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+219            android:exported="false"
+219-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+220            android:initOrder="100" />
+220-->[com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+221
+222        <activity
+222-->[com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+223            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+223-->[com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+224            android:exported="false"
+224-->[com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+225            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+225-->[com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+226
+227        <provider
+227-->[androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+228            android:name="androidx.startup.InitializationProvider"
+228-->[androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+229            android:authorities="com.example.calmsea.androidx-startup"
+229-->[androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+230            android:exported="false" >
+230-->[androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+231            <meta-data
+231-->[androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+232                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+232-->[androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+233                android:value="androidx.startup" />
+233-->[androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+234            <meta-data
+234-->[androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+235                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+235-->[androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+236                android:value="androidx.startup" />
+236-->[androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+237            <meta-data
+237-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+238                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+238-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+239                android:value="androidx.startup" />
+239-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+240        </provider>
+241
+242        <meta-data
+242-->[com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+243            android:name="com.google.android.gms.version"
+243-->[com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+244            android:value="@integer/google_play_services_version" />
+244-->[com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+245
+246        <service
+246-->[com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+247            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+247-->[com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+248            android:exported="false" >
+248-->[com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+249            <meta-data
+249-->[com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+250                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+250-->[com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+251                android:value="cct" />
+251-->[com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+252        </service>
+253        <service
+253-->[com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+254            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+254-->[com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+255            android:exported="false"
+255-->[com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+256            android:permission="android.permission.BIND_JOB_SERVICE" >
+256-->[com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+257        </service>
+258
+259        <receiver
+259-->[com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+260            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+260-->[com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+261            android:exported="false" />
+261-->[com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+262        <receiver
+262-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+263            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+263-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+264            android:directBootAware="false"
+264-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+265            android:enabled="true"
+265-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+266            android:exported="true"
+266-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+267            android:permission="android.permission.DUMP" >
+267-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+268            <intent-filter>
+268-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+269                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+269-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+269-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+270            </intent-filter>
+271            <intent-filter>
+271-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+272                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+272-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+272-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+273            </intent-filter>
+274            <intent-filter>
+274-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+275                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+275-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+275-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+276            </intent-filter>
+277            <intent-filter>
+277-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+278                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+278-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+278-->[androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+279            </intent-filter>
+280        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+281        <activity
+281-->[com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+282            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+282-->[com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:15:13-93
+283            android:exported="false"
+283-->[com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:16:13-37
+284            android:stateNotNeeded="true"
+284-->[com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:17:13-42
+285            android:theme="@style/Theme.PlayCore.Transparent" />
+285-->[com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:18:13-62
+286    </application>
+287
+288</manifest>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/text_name_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora"
+        android:text="CalmSea"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintEnd_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toTopOf="@id/guideline11"/>
+    <TextView
+        android:id="@+id/text_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora"
+        android:text="Регистрация"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintEnd_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@id/text_name_reg"/>
+    <EditText
+        android:id="@+id/name_reg"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:text="Введите ваше имя"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lora"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintEnd_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@id/text_reg"/>
+    <EditText
+        android:id="@+id/edittext_reg_email"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:text="Введите ваш email"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lora"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintEnd_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@id/name_reg"/>
+    <EditText
+        android:id="@+id/edittext_reg_password"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:text="Введите пароль"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lora"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintEnd_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@id/edittext_reg_email"/>
+    <EditText
+        android:id="@+id/reg2password"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:text="Подтвердите пароль"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lora"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintEnd_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@id/edittext_reg_password"/>
+    <Button
+        android:id="@+id/button_reg"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF4A90E2"
+        android:fontFamily="@font/lora"
+        android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline10"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintTop_toBottomOf="@id/reg2password" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="160dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

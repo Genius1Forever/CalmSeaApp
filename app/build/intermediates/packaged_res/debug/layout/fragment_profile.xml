@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="#91ceff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_myprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora"
+                android:text="Мой профиль"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintTop_toTopOf="@id/guideline26" />
+            <ImageButton
+                android:id="@+id/btn_edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="@id/guideline25"
+                app:layout_constraintTop_toTopOf="@id/guideline26"/>
+            <ImageView
+                android:id="@+id/profileAvatarImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="30dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintEnd_toEndOf="@id/guideline25"
+                app:layout_constraintTop_toBottomOf="@id/textview_myprofile"/>
+            <TextView
+                android:id="@+id/textview_myself"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora"
+                android:text="О себе"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintTop_toBottomOf="@id/profileAvatarImageView"/>
+            <LinearLayout
+                android:id="@+id/LinearLayout_myself"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_linearlayout"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintEnd_toEndOf="@id/guideline25"
+                app:layout_constraintTop_toBottomOf="@id/textview_myself">
+
+                <!-- Контейнер для имени -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Имя"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_color"
+                        android:fontFamily="@font/lora" />
+
+                    <TextView
+                        android:id="@+id/profileNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lora" />
+                </LinearLayout>
+
+                <!-- Контейнер для даты рождения -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Дата рождения"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_color"
+                        android:fontFamily="@font/lora" />
+
+                    <TextView
+                        android:id="@+id/profileBirthdateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lora" />
+                </LinearLayout>
+
+                <!-- Контейнер для пола -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Пол"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_color"
+                        android:fontFamily="@font/lora" />
+
+                    <TextView
+                        android:id="@+id/profileGenderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lora" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Статистика -->
+            <TextView
+                android:id="@+id/textview_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora"
+                android:text="Статистика"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintTop_toBottomOf="@id/LinearLayout_myself"/>
+            <LinearLayout
+                android:id="@+id/LinearLayout_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_linearlayout"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintEnd_toEndOf="@id/guideline25"
+                app:layout_constraintTop_toBottomOf="@id/textview_statistics">
+
+                <!-- Контейнер для количества записей -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Количество записей"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_color"
+                        android:fontFamily="@font/lora" />
+
+                    <TextView
+                        android:id="@+id/profileCountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lora" />
+                </LinearLayout>
+
+                <!-- Контейнер для среднего настроения -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Среднее настроение"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_color"
+                        android:fontFamily="@font/lora" />
+
+                    <TextView
+                        android:id="@+id/profileMoodTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lora" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Контактная информация -->
+            <TextView
+                android:id="@+id/textview_contactinf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora"
+                android:text="Контактная информация"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintTop_toBottomOf="@id/LinearLayout_statistics"/>
+            <LinearLayout
+                android:id="@+id/LinearLayout_contactinf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_linearlayout"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintEnd_toEndOf="@id/guideline25"
+                app:layout_constraintTop_toBottomOf="@id/textview_contactinf">
+
+                <!-- Контейнер для Email -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_color"
+                        android:fontFamily="@font/lora" />
+
+                    <TextView
+                        android:id="@+id/profileEmailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lora" />
+                </LinearLayout>
+
+                <!-- Контейнер для телефона -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Телефон"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary_text_color"
+                        android:fontFamily="@font/lora" />
+
+                    <TextView
+                        android:id="@+id/profilePhoneTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lora" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FF4A90E2"
+                android:fontFamily="@font/lora"
+                android:text="Выйти"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="40dp"
+                app:layout_constraintStart_toStartOf="@id/guideline24"
+                app:layout_constraintEnd_toEndOf="@id/guideline25"
+                app:layout_constraintTop_toBottomOf="@id/LinearLayout_contactinf"
+                app:layout_constraintBottom_toBottomOf="@id/guideline27"/>
+
+
+          <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="60dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

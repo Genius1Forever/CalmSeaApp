@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JournalFragment"
+    android:background="#91ceff">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <TextView
+                android:id="@+id/textView_Journal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/lora"
+                android:text="Мой дневник"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/guideline32"
+                app:layout_constraintTop_toTopOf="@id/guideline34"/>
+            <LinearLayout
+                android:id="@+id/calendar_date_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@id/guideline32"
+                app:layout_constraintTop_toBottomOf="@id/textView_Journal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="Календарь"
+                    android:fontFamily="@font/lora"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+                <ImageButton
+                    android:id="@+id/btn_change_date"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="Изменить дату"
+                    android:background="@drawable/icon_calendar"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center"
+                    android:focusable="true"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addNoteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/button_background"
+                android:padding="12dp"
+                android:layout_margin="16dp"
+                android:elevation="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:layout_constraintStart_toStartOf="@id/guideline32"
+                app:layout_constraintEnd_toEndOf="@id/guideline33"
+                app:layout_constraintTop_toBottomOf="@id/calendar_date_layout">
+
+                <!-- Содержимое кнопки -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Добавить заметку"
+                        android:textColor="@color/calmsea_text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Как прошел ваш день?"
+                        android:textColor="@color/calmsea_text_secondary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/plus"
+                    android:tint="@color/calmsea_text_primary" />
+            </LinearLayout>
+
+
+            <!-- RecyclerView для отображения списка заметок -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:clipToPadding="false"
+                    android:fontFamily="@font/lora"
+                    android:padding="3dp"
+                    android:scrollbars="none"
+                    app:layout_constraintStart_toStartOf="@id/guideline32"
+                    app:layout_constraintEnd_toEndOf="@id/guideline33"
+                    app:layout_constraintTop_toBottomOf="@id/addNoteButton"
+                    app:layout_constraintBottom_toTopOf="@id/guideline35"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp"/>
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="15dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="70dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

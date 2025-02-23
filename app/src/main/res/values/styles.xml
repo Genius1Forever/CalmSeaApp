@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalmSeaHeaderStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/calmsea_text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/lora</item>
+    </style>
+
+    <style name="CalmSeaWeekDayStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/calmsea_text_secondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CalmSeaDateStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

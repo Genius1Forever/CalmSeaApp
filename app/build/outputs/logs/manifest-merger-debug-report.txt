@@ -1,0 +1,941 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml:2:1-62:12
+MERGED from [com.google.android.material:material:1.11.0] E:\Mobilka\caches\transforms-3\fe79e33212a5bdfc249f0f2a87146a65\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Mobilka\caches\transforms-3\2ada6523bf44b64a0c747f2fc034d746\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] E:\Mobilka\caches\transforms-3\54700d5526ea6915b5a7facb15dd4acc\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] E:\Mobilka\caches\transforms-3\af92edb93aef59ca6b494838ea5c421c\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.firebaseui:firebase-ui-database:8.0.1] E:\Mobilka\caches\transforms-3\58f6f450034caa3828bf12e99dfabd32\transformed\jetified-firebase-ui-database-8.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:17:1-75:12
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.bumptech.glide:glide:4.15.1] E:\Mobilka\caches\transforms-3\01bc69604bdf43f6b114ae735957538d\transformed\jetified-glide-4.15.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] E:\Mobilka\caches\transforms-3\e2bd11f77909acd5f1fb181075f68c93\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] E:\Mobilka\caches\transforms-3\614b0138c97b2964a7bfdf87bcf28396\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:17:1-66:12
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] E:\Mobilka\caches\transforms-3\f53e163372f51f107c3fe85309b680da\transformed\jetified-credentials-1.2.0-rc01\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] E:\Mobilka\caches\transforms-3\2fd5af6215fb3db3596abd2dc66d6f46\transformed\jetified-play-services-auth-api-phone-18.0.2\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:integrity:1.3.0] E:\Mobilka\caches\transforms-3\1ac49a94c8af445dc58c5e62f4b93a48\transformed\jetified-integrity-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] E:\Mobilka\caches\transforms-3\6f693e781d91cea34edfd35b88f4976e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] E:\Mobilka\caches\transforms-3\b418e0169519949e55a87a8abe483509\transformed\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] E:\Mobilka\caches\transforms-3\3debd7cbe1a075727facf13f72726463\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] E:\Mobilka\caches\transforms-3\68b4ad8f48fedb690b10a4d84b1f153e\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] E:\Mobilka\caches\transforms-3\76429d934dd16058ac2716984e2185ca\transformed\jetified-play-services-fido-20.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] E:\Mobilka\caches\transforms-3\aaf46450c014623be1782006eb7e3a63\transformed\jetified-play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] E:\Mobilka\caches\transforms-3\f98fe9b28833cf6d2c68b9d6edc39c8b\transformed\jetified-activity-1.8.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] E:\Mobilka\caches\transforms-3\f3808805775ec83cee5ee2dc1737a5a0\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] E:\Mobilka\caches\transforms-3\1a2f8d799bdf63fcda0a7bd3624fe83a\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] E:\Mobilka\caches\transforms-3\c2de355a1e307811b228ab6c13c7386f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Mobilka\caches\transforms-3\cbf1e91df2371e114f753f83dd0134cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Mobilka\caches\transforms-3\60cb97e7cf4d89b4182eb0ff128aa345\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] E:\Mobilka\caches\transforms-3\55480c55b7dfc8e4c5d901a2d8196241\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Mobilka\caches\transforms-3\c54c15d6f9d2dc07ffaca4ab9eb9fea4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Mobilka\caches\transforms-3\95f72616815add6615922e15cc4d43bc\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] E:\Mobilka\caches\transforms-3\75afd9e761ecf693b75c63f3f2eaf891\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] E:\Mobilka\caches\transforms-3\8177a425ccaaf50f07989d3fb73c940d\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Mobilka\caches\transforms-3\483230c1b5b467071e31fe44487aa6ea\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] E:\Mobilka\caches\transforms-3\311fd8cfa6c07b0ef464f47ee86986eb\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.4.0] E:\Mobilka\caches\transforms-3\82d4b092d3ff44d5706961fdf2138e3f\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.9.0] E:\Mobilka\caches\transforms-3\b8101fee7219a5ae94607c018b80d235\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Mobilka\caches\transforms-3\6e54044dfec1b166788c30e160d3fc82\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] E:\Mobilka\caches\transforms-3\a2311bb1a15f8452ac80f3d757762e69\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] E:\Mobilka\caches\transforms-3\c8faac0cd44def92a4d00472abd98d6e\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] E:\Mobilka\caches\transforms-3\bbddad918e8aca7b2afe1c1739d3ac87\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] E:\Mobilka\caches\transforms-3\7f4c83d5cd9d1f655ac1e5414509810d\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] E:\Mobilka\caches\transforms-3\d021fa3d3cd06ae46c9480ef264aa6b4\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [com.firebaseui:firebase-ui-common:8.0.1] E:\Mobilka\caches\transforms-3\0de48968f80ea98b353be7c65368108c\transformed\jetified-firebase-ui-common-8.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] E:\Mobilka\caches\transforms-3\f83a6717edf02f84e3ed049139505f6e\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] E:\Mobilka\caches\transforms-3\8df779fd72a201ecdc9d574e6926bf37\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] E:\Mobilka\caches\transforms-3\d6ee67470d2219c5db85258ac96f806f\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] E:\Mobilka\caches\transforms-3\c01f2cec81a2fa46931a01f7c6e87ece\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] E:\Mobilka\caches\transforms-3\68d43f1e3f6cbba287a91b1e0a043ecf\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] E:\Mobilka\caches\transforms-3\3cb54e08b7fc71a2c84a9d3db6ae6533\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] E:\Mobilka\caches\transforms-3\26cf5cfddfd8ebad9d7ed0bf9b5b58e0\transformed\jetified-paging-rxjava3-3.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] E:\Mobilka\caches\transforms-3\7b1855a805164c9528eac9b115031a41\transformed\jetified-firebase-installations-interop-17.1.1\AndroidManifest.xml:15:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] E:\Mobilka\caches\transforms-3\f7ed2fa0480ccc19cb136fc0aa414a14\transformed\jetified-play-services-tasks-18.2.0\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] E:\Mobilka\caches\transforms-3\f1075d3910e8bdeef24da7d91c6f313f\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.fragment:fragment:1.3.6] E:\Mobilka\caches\transforms-3\ddc731474257a5781d0a3e7e44ed416e\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] E:\Mobilka\caches\transforms-3\e08ecb0f7eee8b9eab070fd36c63d873\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.1] E:\Mobilka\caches\transforms-3\282a7e7841c8c283a01874e586081553\transformed\jetified-lifecycle-livedata-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] E:\Mobilka\caches\transforms-3\212a8d958764fa5ba4bca303ce5e661f\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [io.grpc:grpc-android:1.62.2] E:\Mobilka\caches\transforms-3\c0e0a147d1510475c2e461ec7f9a5fe9\transformed\jetified-grpc-android-1.62.2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:15:1-31:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] E:\Mobilka\caches\transforms-3\8f3547cba8383b605e7e000633d1dcc0\transformed\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:15:1-41:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Mobilka\caches\transforms-3\d68396e2924c4fdcead3bb29274fc1dd\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Mobilka\caches\transforms-3\7ae47f651aa4b20a8fd764682445c828\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] E:\Mobilka\caches\transforms-3\0947e948d3c52c1b678319544c004fa3\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] E:\Mobilka\caches\transforms-3\ce82231c30b9c375ab94d962587bb8f1\transformed\jetified-gifdecoder-4.15.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Mobilka\caches\transforms-3\c09f7b63469692a47970b14eaa0f5c09\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] E:\Mobilka\caches\transforms-3\ba00f3a8437caea546247a753202b113\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Mobilka\caches\transforms-3\ab6e812680628a42aa5f60c1574bceae\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:18.0.0] E:\Mobilka\caches\transforms-3\fb7a366166917b6c1049338f75367452\transformed\jetified-firebase-components-18.0.0\AndroidManifest.xml:15:1-20:12
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] E:\Mobilka\caches\transforms-3\7192ffe47420eabeee67d2da02c74ac2\transformed\jetified-transport-api-3.1.0\AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Mobilka\caches\transforms-3\b6f83d66b48c09450e1a2249f76854a8\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Mobilka\caches\transforms-3\8ab988d8caf23a66339e656080c24e55\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] E:\Mobilka\caches\transforms-3\ec64ea8add159dcab42d15aeb815be80\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Mobilka\caches\transforms-3\24edaad277a04aca42d0f3c3571fb890\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] E:\Mobilka\caches\transforms-3\312d8945a8742106a3c1588df278a07f\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] E:\Mobilka\caches\transforms-3\1e172a7074578cb55a59728f678dbf51\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] E:\Mobilka\caches\transforms-3\6cdd40e37d28aa8f2712a5d6f599e978\transformed\jetified-googleid-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] E:\Mobilka\caches\transforms-3\48f6deeaa1ba222471235aed212d93ad\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:2:1-21:12
+	package
+		INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.firebaseui:firebase-ui-database:8.0.1] E:\Mobilka\caches\transforms-3\58f6f450034caa3828bf12e99dfabd32\transformed\jetified-firebase-ui-database-8.0.1\AndroidManifest.xml:9:5-67
+MERGED from [com.firebaseui:firebase-ui-database:8.0.1] E:\Mobilka\caches\transforms-3\58f6f450034caa3828bf12e99dfabd32\transformed\jetified-firebase-ui-database-8.0.1\AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:8:5-79
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:7:5-79
+MERGED from [io.grpc:grpc-android:1.62.2] E:\Mobilka\caches\transforms-3\c0e0a147d1510475c2e461ec7f9a5fe9\transformed\jetified-grpc-android-1.62.2\AndroidManifest.xml:7:5-79
+MERGED from [io.grpc:grpc-android:1.62.2] E:\Mobilka\caches\transforms-3\c0e0a147d1510475c2e461ec7f9a5fe9\transformed\jetified-grpc-android-1.62.2\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:8:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:10:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:11:5-74
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:11:22-71
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:12:22-71
+application
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:16:5-60:19
+INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml:16:5-60:19
+MERGED from [com.google.android.material:material:1.11.0] E:\Mobilka\caches\transforms-3\fe79e33212a5bdfc249f0f2a87146a65\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.11.0] E:\Mobilka\caches\transforms-3\fe79e33212a5bdfc249f0f2a87146a65\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Mobilka\caches\transforms-3\2ada6523bf44b64a0c747f2fc034d746\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Mobilka\caches\transforms-3\2ada6523bf44b64a0c747f2fc034d746\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:25:5-36:19
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:25:5-36:19
+MERGED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.github.bumptech.glide:glide:4.15.1] E:\Mobilka\caches\transforms-3\01bc69604bdf43f6b114ae735957538d\transformed\jetified-glide-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.15.1] E:\Mobilka\caches\transforms-3\01bc69604bdf43f6b114ae735957538d\transformed\jetified-glide-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:28:5-64:19
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:28:5-64:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.play:integrity:1.3.0] E:\Mobilka\caches\transforms-3\1ac49a94c8af445dc58c5e62f4b93a48\transformed\jetified-integrity-1.3.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.play:integrity:1.3.0] E:\Mobilka\caches\transforms-3\1ac49a94c8af445dc58c5e62f4b93a48\transformed\jetified-integrity-1.3.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] E:\Mobilka\caches\transforms-3\6f693e781d91cea34edfd35b88f4976e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] E:\Mobilka\caches\transforms-3\6f693e781d91cea34edfd35b88f4976e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] E:\Mobilka\caches\transforms-3\b418e0169519949e55a87a8abe483509\transformed\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] E:\Mobilka\caches\transforms-3\b418e0169519949e55a87a8abe483509\transformed\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] E:\Mobilka\caches\transforms-3\3debd7cbe1a075727facf13f72726463\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] E:\Mobilka\caches\transforms-3\3debd7cbe1a075727facf13f72726463\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] E:\Mobilka\caches\transforms-3\76429d934dd16058ac2716984e2185ca\transformed\jetified-play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] E:\Mobilka\caches\transforms-3\76429d934dd16058ac2716984e2185ca\transformed\jetified-play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] E:\Mobilka\caches\transforms-3\8177a425ccaaf50f07989d3fb73c940d\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] E:\Mobilka\caches\transforms-3\8177a425ccaaf50f07989d3fb73c940d\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] E:\Mobilka\caches\transforms-3\f7ed2fa0480ccc19cb136fc0aa414a14\transformed\jetified-play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] E:\Mobilka\caches\transforms-3\f7ed2fa0480ccc19cb136fc0aa414a14\transformed\jetified-play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] E:\Mobilka\caches\transforms-3\f1075d3910e8bdeef24da7d91c6f313f\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] E:\Mobilka\caches\transforms-3\f1075d3910e8bdeef24da7d91c6f313f\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:21:5-29:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:21:5-29:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:25:5-39:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] E:\Mobilka\caches\transforms-3\ce82231c30b9c375ab94d962587bb8f1\transformed\jetified-gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] E:\Mobilka\caches\transforms-3\ce82231c30b9c375ab94d962587bb8f1\transformed\jetified-gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Mobilka\caches\transforms-3\c09f7b63469692a47970b14eaa0f5c09\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Mobilka\caches\transforms-3\c09f7b63469692a47970b14eaa0f5c09\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Mobilka\caches\transforms-3\b6f83d66b48c09450e1a2249f76854a8\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Mobilka\caches\transforms-3\b6f83d66b48c09450e1a2249f76854a8\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:11:5-19:19
+	android:extractNativeLibs
+		INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:23:9-35
+	android:label
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:21:9-41
+	android:fullBackupContent
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:19:9-54
+	android:roundIcon
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:22:9-54
+	tools:targetApi
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:25:9-29
+	android:icon
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:20:9-43
+	android:allowBackup
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:24:9-45
+	android:dataExtractionRules
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:18:9-65
+activity#com.example.calmsea.NoteEditActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:28:9-30:40
+	android:exported
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:29:13-45
+activity#com.example.calmsea.EditActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:31:9-33:40
+	android:exported
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:32:13-41
+activity#com.example.calmsea.MoodQuestionActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:34:9-36:40
+	android:exported
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:35:13-49
+activity#com.example.calmsea.AddNoteActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:37:9-39:40
+	android:exported
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:38:13-44
+activity#com.example.calmsea.CalendarActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:40:9-42:40
+	android:exported
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:41:13-45
+activity#com.example.calmsea.RegistrationActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:43:9-45:40
+	android:exported
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:45:13-37
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:44:13-49
+activity#com.example.calmsea.AuthActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:46:9-48:40
+	android:exported
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:48:13-37
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:47:13-41
+activity#com.example.calmsea.WelcomeActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:49:9-58:20
+	android:exported
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:51:13-36
+	android:theme
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:52:13-60
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:50:13-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:53:13-57:29
+action#android.intent.action.MAIN
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:54:17-69
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:54:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:56:17-77
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:56:27-74
+activity#com.example.calmsea.MainActivity
+ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:59:9-50
+	android:name
+		ADDED from E:\Mobilka\app\src\main\AndroidManifest.xml:59:19-47
+uses-sdk
+INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml
+INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.11.0] E:\Mobilka\caches\transforms-3\fe79e33212a5bdfc249f0f2a87146a65\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] E:\Mobilka\caches\transforms-3\fe79e33212a5bdfc249f0f2a87146a65\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Mobilka\caches\transforms-3\2ada6523bf44b64a0c747f2fc034d746\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] E:\Mobilka\caches\transforms-3\2ada6523bf44b64a0c747f2fc034d746\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] E:\Mobilka\caches\transforms-3\54700d5526ea6915b5a7facb15dd4acc\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] E:\Mobilka\caches\transforms-3\54700d5526ea6915b5a7facb15dd4acc\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] E:\Mobilka\caches\transforms-3\af92edb93aef59ca6b494838ea5c421c\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] E:\Mobilka\caches\transforms-3\af92edb93aef59ca6b494838ea5c421c\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-database:8.0.1] E:\Mobilka\caches\transforms-3\58f6f450034caa3828bf12e99dfabd32\transformed\jetified-firebase-ui-database-8.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-database:8.0.1] E:\Mobilka\caches\transforms-3\58f6f450034caa3828bf12e99dfabd32\transformed\jetified-firebase-ui-database-8.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:21:5-23:151
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:21:5-23:151
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:18:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:4.15.1] E:\Mobilka\caches\transforms-3\01bc69604bdf43f6b114ae735957538d\transformed\jetified-glide-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.15.1] E:\Mobilka\caches\transforms-3\01bc69604bdf43f6b114ae735957538d\transformed\jetified-glide-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] E:\Mobilka\caches\transforms-3\e2bd11f77909acd5f1fb181075f68c93\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] E:\Mobilka\caches\transforms-3\e2bd11f77909acd5f1fb181075f68c93\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] E:\Mobilka\caches\transforms-3\614b0138c97b2964a7bfdf87bcf28396\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] E:\Mobilka\caches\transforms-3\614b0138c97b2964a7bfdf87bcf28396\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] E:\Mobilka\caches\transforms-3\f53e163372f51f107c3fe85309b680da\transformed\jetified-credentials-1.2.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] E:\Mobilka\caches\transforms-3\f53e163372f51f107c3fe85309b680da\transformed\jetified-credentials-1.2.0-rc01\AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:21:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] E:\Mobilka\caches\transforms-3\2fd5af6215fb3db3596abd2dc66d6f46\transformed\jetified-play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] E:\Mobilka\caches\transforms-3\2fd5af6215fb3db3596abd2dc66d6f46\transformed\jetified-play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.3.0] E:\Mobilka\caches\transforms-3\1ac49a94c8af445dc58c5e62f4b93a48\transformed\jetified-integrity-1.3.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.3.0] E:\Mobilka\caches\transforms-3\1ac49a94c8af445dc58c5e62f4b93a48\transformed\jetified-integrity-1.3.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] E:\Mobilka\caches\transforms-3\6f693e781d91cea34edfd35b88f4976e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] E:\Mobilka\caches\transforms-3\6f693e781d91cea34edfd35b88f4976e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] E:\Mobilka\caches\transforms-3\b418e0169519949e55a87a8abe483509\transformed\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] E:\Mobilka\caches\transforms-3\b418e0169519949e55a87a8abe483509\transformed\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] E:\Mobilka\caches\transforms-3\3debd7cbe1a075727facf13f72726463\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] E:\Mobilka\caches\transforms-3\3debd7cbe1a075727facf13f72726463\transformed\jetified-firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] E:\Mobilka\caches\transforms-3\68b4ad8f48fedb690b10a4d84b1f153e\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] E:\Mobilka\caches\transforms-3\68b4ad8f48fedb690b10a4d84b1f153e\transformed\jetified-firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] E:\Mobilka\caches\transforms-3\76429d934dd16058ac2716984e2185ca\transformed\jetified-play-services-fido-20.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] E:\Mobilka\caches\transforms-3\76429d934dd16058ac2716984e2185ca\transformed\jetified-play-services-fido-20.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] E:\Mobilka\caches\transforms-3\aaf46450c014623be1782006eb7e3a63\transformed\jetified-play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] E:\Mobilka\caches\transforms-3\aaf46450c014623be1782006eb7e3a63\transformed\jetified-play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.activity:activity:1.8.0] E:\Mobilka\caches\transforms-3\f98fe9b28833cf6d2c68b9d6edc39c8b\transformed\jetified-activity-1.8.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] E:\Mobilka\caches\transforms-3\f98fe9b28833cf6d2c68b9d6edc39c8b\transformed\jetified-activity-1.8.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] E:\Mobilka\caches\transforms-3\f3808805775ec83cee5ee2dc1737a5a0\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] E:\Mobilka\caches\transforms-3\f3808805775ec83cee5ee2dc1737a5a0\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] E:\Mobilka\caches\transforms-3\1a2f8d799bdf63fcda0a7bd3624fe83a\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] E:\Mobilka\caches\transforms-3\1a2f8d799bdf63fcda0a7bd3624fe83a\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] E:\Mobilka\caches\transforms-3\c2de355a1e307811b228ab6c13c7386f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] E:\Mobilka\caches\transforms-3\c2de355a1e307811b228ab6c13c7386f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Mobilka\caches\transforms-3\cbf1e91df2371e114f753f83dd0134cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Mobilka\caches\transforms-3\cbf1e91df2371e114f753f83dd0134cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Mobilka\caches\transforms-3\60cb97e7cf4d89b4182eb0ff128aa345\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Mobilka\caches\transforms-3\60cb97e7cf4d89b4182eb0ff128aa345\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] E:\Mobilka\caches\transforms-3\55480c55b7dfc8e4c5d901a2d8196241\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] E:\Mobilka\caches\transforms-3\55480c55b7dfc8e4c5d901a2d8196241\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Mobilka\caches\transforms-3\c54c15d6f9d2dc07ffaca4ab9eb9fea4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Mobilka\caches\transforms-3\c54c15d6f9d2dc07ffaca4ab9eb9fea4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Mobilka\caches\transforms-3\95f72616815add6615922e15cc4d43bc\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Mobilka\caches\transforms-3\95f72616815add6615922e15cc4d43bc\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] E:\Mobilka\caches\transforms-3\75afd9e761ecf693b75c63f3f2eaf891\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] E:\Mobilka\caches\transforms-3\75afd9e761ecf693b75c63f3f2eaf891\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] E:\Mobilka\caches\transforms-3\8177a425ccaaf50f07989d3fb73c940d\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] E:\Mobilka\caches\transforms-3\8177a425ccaaf50f07989d3fb73c940d\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Mobilka\caches\transforms-3\483230c1b5b467071e31fe44487aa6ea\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Mobilka\caches\transforms-3\483230c1b5b467071e31fe44487aa6ea\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] E:\Mobilka\caches\transforms-3\311fd8cfa6c07b0ef464f47ee86986eb\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] E:\Mobilka\caches\transforms-3\311fd8cfa6c07b0ef464f47ee86986eb\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.4.0] E:\Mobilka\caches\transforms-3\82d4b092d3ff44d5706961fdf2138e3f\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] E:\Mobilka\caches\transforms-3\82d4b092d3ff44d5706961fdf2138e3f\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.9.0] E:\Mobilka\caches\transforms-3\b8101fee7219a5ae94607c018b80d235\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] E:\Mobilka\caches\transforms-3\b8101fee7219a5ae94607c018b80d235\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Mobilka\caches\transforms-3\6e54044dfec1b166788c30e160d3fc82\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Mobilka\caches\transforms-3\6e54044dfec1b166788c30e160d3fc82\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] E:\Mobilka\caches\transforms-3\a2311bb1a15f8452ac80f3d757762e69\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] E:\Mobilka\caches\transforms-3\a2311bb1a15f8452ac80f3d757762e69\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] E:\Mobilka\caches\transforms-3\c8faac0cd44def92a4d00472abd98d6e\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] E:\Mobilka\caches\transforms-3\c8faac0cd44def92a4d00472abd98d6e\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] E:\Mobilka\caches\transforms-3\bbddad918e8aca7b2afe1c1739d3ac87\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] E:\Mobilka\caches\transforms-3\bbddad918e8aca7b2afe1c1739d3ac87\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] E:\Mobilka\caches\transforms-3\7f4c83d5cd9d1f655ac1e5414509810d\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] E:\Mobilka\caches\transforms-3\7f4c83d5cd9d1f655ac1e5414509810d\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] E:\Mobilka\caches\transforms-3\d021fa3d3cd06ae46c9480ef264aa6b4\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] E:\Mobilka\caches\transforms-3\d021fa3d3cd06ae46c9480ef264aa6b4\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-common:8.0.1] E:\Mobilka\caches\transforms-3\0de48968f80ea98b353be7c65368108c\transformed\jetified-firebase-ui-common-8.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-common:8.0.1] E:\Mobilka\caches\transforms-3\0de48968f80ea98b353be7c65368108c\transformed\jetified-firebase-ui-common-8.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.savedstate:savedstate:1.2.1] E:\Mobilka\caches\transforms-3\f83a6717edf02f84e3ed049139505f6e\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] E:\Mobilka\caches\transforms-3\f83a6717edf02f84e3ed049139505f6e\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] E:\Mobilka\caches\transforms-3\8df779fd72a201ecdc9d574e6926bf37\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] E:\Mobilka\caches\transforms-3\8df779fd72a201ecdc9d574e6926bf37\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] E:\Mobilka\caches\transforms-3\d6ee67470d2219c5db85258ac96f806f\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] E:\Mobilka\caches\transforms-3\d6ee67470d2219c5db85258ac96f806f\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] E:\Mobilka\caches\transforms-3\c01f2cec81a2fa46931a01f7c6e87ece\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] E:\Mobilka\caches\transforms-3\c01f2cec81a2fa46931a01f7c6e87ece\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] E:\Mobilka\caches\transforms-3\68d43f1e3f6cbba287a91b1e0a043ecf\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] E:\Mobilka\caches\transforms-3\68d43f1e3f6cbba287a91b1e0a043ecf\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] E:\Mobilka\caches\transforms-3\3cb54e08b7fc71a2c84a9d3db6ae6533\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] E:\Mobilka\caches\transforms-3\3cb54e08b7fc71a2c84a9d3db6ae6533\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] E:\Mobilka\caches\transforms-3\26cf5cfddfd8ebad9d7ed0bf9b5b58e0\transformed\jetified-paging-rxjava3-3.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] E:\Mobilka\caches\transforms-3\26cf5cfddfd8ebad9d7ed0bf9b5b58e0\transformed\jetified-paging-rxjava3-3.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] E:\Mobilka\caches\transforms-3\7b1855a805164c9528eac9b115031a41\transformed\jetified-firebase-installations-interop-17.1.1\AndroidManifest.xml:17:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] E:\Mobilka\caches\transforms-3\7b1855a805164c9528eac9b115031a41\transformed\jetified-firebase-installations-interop-17.1.1\AndroidManifest.xml:17:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] E:\Mobilka\caches\transforms-3\f7ed2fa0480ccc19cb136fc0aa414a14\transformed\jetified-play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] E:\Mobilka\caches\transforms-3\f7ed2fa0480ccc19cb136fc0aa414a14\transformed\jetified-play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] E:\Mobilka\caches\transforms-3\f1075d3910e8bdeef24da7d91c6f313f\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] E:\Mobilka\caches\transforms-3\f1075d3910e8bdeef24da7d91c6f313f\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] E:\Mobilka\caches\transforms-3\ddc731474257a5781d0a3e7e44ed416e\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] E:\Mobilka\caches\transforms-3\ddc731474257a5781d0a3e7e44ed416e\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] E:\Mobilka\caches\transforms-3\e08ecb0f7eee8b9eab070fd36c63d873\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] E:\Mobilka\caches\transforms-3\e08ecb0f7eee8b9eab070fd36c63d873\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.1] E:\Mobilka\caches\transforms-3\282a7e7841c8c283a01874e586081553\transformed\jetified-lifecycle-livedata-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.1] E:\Mobilka\caches\transforms-3\282a7e7841c8c283a01874e586081553\transformed\jetified-lifecycle-livedata-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] E:\Mobilka\caches\transforms-3\212a8d958764fa5ba4bca303ce5e661f\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] E:\Mobilka\caches\transforms-3\212a8d958764fa5ba4bca303ce5e661f\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [io.grpc:grpc-android:1.62.2] E:\Mobilka\caches\transforms-3\c0e0a147d1510475c2e461ec7f9a5fe9\transformed\jetified-grpc-android-1.62.2\AndroidManifest.xml:5:5-44
+MERGED from [io.grpc:grpc-android:1.62.2] E:\Mobilka\caches\transforms-3\c0e0a147d1510475c2e461ec7f9a5fe9\transformed\jetified-grpc-android-1.62.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] E:\Mobilka\caches\transforms-3\8f3547cba8383b605e7e000633d1dcc0\transformed\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] E:\Mobilka\caches\transforms-3\8f3547cba8383b605e7e000633d1dcc0\transformed\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Mobilka\caches\transforms-3\d68396e2924c4fdcead3bb29274fc1dd\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Mobilka\caches\transforms-3\d68396e2924c4fdcead3bb29274fc1dd\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Mobilka\caches\transforms-3\7ae47f651aa4b20a8fd764682445c828\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Mobilka\caches\transforms-3\7ae47f651aa4b20a8fd764682445c828\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] E:\Mobilka\caches\transforms-3\0947e948d3c52c1b678319544c004fa3\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] E:\Mobilka\caches\transforms-3\0947e948d3c52c1b678319544c004fa3\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] E:\Mobilka\caches\transforms-3\ce82231c30b9c375ab94d962587bb8f1\transformed\jetified-gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] E:\Mobilka\caches\transforms-3\ce82231c30b9c375ab94d962587bb8f1\transformed\jetified-gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Mobilka\caches\transforms-3\c09f7b63469692a47970b14eaa0f5c09\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Mobilka\caches\transforms-3\c09f7b63469692a47970b14eaa0f5c09\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] E:\Mobilka\caches\transforms-3\ba00f3a8437caea546247a753202b113\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] E:\Mobilka\caches\transforms-3\ba00f3a8437caea546247a753202b113\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Mobilka\caches\transforms-3\ab6e812680628a42aa5f60c1574bceae\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Mobilka\caches\transforms-3\ab6e812680628a42aa5f60c1574bceae\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:18.0.0] E:\Mobilka\caches\transforms-3\fb7a366166917b6c1049338f75367452\transformed\jetified-firebase-components-18.0.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:18.0.0] E:\Mobilka\caches\transforms-3\fb7a366166917b6c1049338f75367452\transformed\jetified-firebase-components-18.0.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] E:\Mobilka\caches\transforms-3\7192ffe47420eabeee67d2da02c74ac2\transformed\jetified-transport-api-3.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] E:\Mobilka\caches\transforms-3\7192ffe47420eabeee67d2da02c74ac2\transformed\jetified-transport-api-3.1.0\AndroidManifest.xml:18:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Mobilka\caches\transforms-3\b6f83d66b48c09450e1a2249f76854a8\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Mobilka\caches\transforms-3\b6f83d66b48c09450e1a2249f76854a8\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Mobilka\caches\transforms-3\8ab988d8caf23a66339e656080c24e55\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Mobilka\caches\transforms-3\8ab988d8caf23a66339e656080c24e55\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] E:\Mobilka\caches\transforms-3\ec64ea8add159dcab42d15aeb815be80\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] E:\Mobilka\caches\transforms-3\ec64ea8add159dcab42d15aeb815be80\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Mobilka\caches\transforms-3\24edaad277a04aca42d0f3c3571fb890\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Mobilka\caches\transforms-3\24edaad277a04aca42d0f3c3571fb890\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] E:\Mobilka\caches\transforms-3\312d8945a8742106a3c1588df278a07f\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] E:\Mobilka\caches\transforms-3\312d8945a8742106a3c1588df278a07f\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] E:\Mobilka\caches\transforms-3\1e172a7074578cb55a59728f678dbf51\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] E:\Mobilka\caches\transforms-3\1e172a7074578cb55a59728f678dbf51\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] E:\Mobilka\caches\transforms-3\6cdd40e37d28aa8f2712a5d6f599e978\transformed\jetified-googleid-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] E:\Mobilka\caches\transforms-3\6cdd40e37d28aa8f2712a5d6f599e978\transformed\jetified-googleid-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] E:\Mobilka\caches\transforms-3\48f6deeaa1ba222471235aed212d93ad\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] E:\Mobilka\caches\transforms-3\48f6deeaa1ba222471235aed212d93ad\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:23:9-148
+	android:targetSdkVersion
+		INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Mobilka\app\src\main\AndroidManifest.xml
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:26:9-35:19
+MERGED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:26:9-35:19
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:22:9-28:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:22:9-28:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:16:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:15:13-84
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
+ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:18:17-122
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:25.1.1] E:\Mobilka\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:21:17-111
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:53:13-63:29
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.1.0] E:\Mobilka\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar
+ADDED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:21.0.0] E:\Mobilka\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] E:\Mobilka\caches\transforms-3\fa0dbcfad45583e2b64cd8787fa5113e\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:23:5-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:23:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] E:\Mobilka\caches\transforms-3\d0b30184885cf1c210781337182fb474\transformed\jetified-play-services-cloud-messaging-17.2.0\AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:29:9-40:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:31:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:32:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:30:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:33:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:34:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:34:25-78
+meta-data#com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:37:13-39:40
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:39:17-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:38:17-92
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:46:9-53:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:49:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:48:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:47:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:50:13-52:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:50:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:51:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:51:25-75
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:57:13-59:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:59:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:58:17-122
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:60:13-62:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:62:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.1.0] E:\Mobilka\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:61:17-119
+service#androidx.credentials.playservices.CredentialProviderMetadataHolder
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:28:13-60
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+meta-data#androidx.credentials.CREDENTIAL_PROVIDER_KEY
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+	android:value
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+activity#androidx.credentials.playservices.HiddenActivity
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+	android:fitsSystemWindows
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+	android:configChanges
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+	android:theme
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] E:\Mobilka\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] E:\Mobilka\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:9:5-98
+	android:name
+		ADDED from [com.google.android.recaptcha:recaptcha:18.5.1] E:\Mobilka\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:9:22-95
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar
+ADDED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] E:\Mobilka\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] E:\Mobilka\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] E:\Mobilka\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] E:\Mobilka\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Mobilka\caches\transforms-3\c09f7b63469692a47970b14eaa0f5c09\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] E:\Mobilka\caches\transforms-3\c09f7b63469692a47970b14eaa0f5c09\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] E:\Mobilka\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.example.calmsea.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.example.calmsea.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] E:\Mobilka\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] E:\Mobilka\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] E:\Mobilka\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.2.0] E:\Mobilka\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] E:\Mobilka\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] E:\Mobilka\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] E:\Mobilka\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+ADDED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:17:13-42
+	android:exported
+		ADDED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:18:13-62
+	android:name
+		ADDED from [com.google.android.play:core-common:2.0.3] E:\Mobilka\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:15:13-93

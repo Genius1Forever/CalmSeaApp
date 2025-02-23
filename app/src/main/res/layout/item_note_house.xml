@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    android:background="@drawable/rounded_border">
+
+    <LinearLayout
+        android:id="@+id/note_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Настроение -->
+        <TextView
+            android:id="@+id/mood_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/lora"
+            android:layout_marginBottom="8dp"
+            android:text="Настроение: Отличное" />
+
+        <!-- Текст заметки -->
+        <TextView
+            android:id="@+id/note_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/lora"
+            android:textColor="@color/black"
+            android:layout_marginBottom="4dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:text="Это пример заметки. Длинный текст будет обрезан, чтобы не занимать слишком много места." />
+
+        <!-- Дата заметки -->
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora"
+            android:gravity="end"
+            android:text="Дата: 26 ноября 2024"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
