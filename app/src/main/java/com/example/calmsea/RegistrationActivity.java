@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
+import android.text.method.PasswordTransformationMethod;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -15,6 +16,8 @@ import androidx.core.content.res.ResourcesCompat;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -88,8 +91,14 @@ public class RegistrationActivity extends AppCompatActivity {
                             String userId = auth.getCurrentUser().getUid();
                             initializeUserDocument(userId, userName, userEmail);
                         } else {
-                            String errorMessage = task.getException() != null ? task.getException().getLocalizedMessage() : "Неизвестная ошибка";
-                            Toast.makeText(this, "Введите корректный Email", Toast.LENGTH_LONG).show();
+                            Exception exception = task.getException();
+                            if (exception instanceof FirebaseAuthUserCollisionException) {
+                                emailEditText.setError("Этот email уже зарегистрирован");
+                            } else if (exception instanceof FirebaseAuthInvalidCredentialsException) {
+                                emailEditText.setError("Неверный формат email");
+                            } else {
+                                Toast.makeText(this, "Ошибка: " + exception.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                            }
                         }
                     });
         });
@@ -113,13 +122,18 @@ public class RegistrationActivity extends AppCompatActivity {
         db.collection("users").document(userId)
                 .set(userData)
                 .addOnSuccessListener(aVoid -> {
-                    Toast.makeText(this, "Регистрация успешна!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
+                Toast.makeText
+                   (this, "Регистрация успешна!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent
+                            (RegistrationActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 })
                 .addOnFailureListener(e -> {
-                    Toast.makeText(this, "Ошибка сохранения данных: " + e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText
+                    (this,
+                    "Ошибка сохранения данных: " + e.getLocalizedMessage(),
+                            Toast.LENGTH_LONG).show();
                 });
     }
     // Метод для настройки поведения EditText с заглушками
@@ -140,56 +154,32 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     private void configurePasswordField(EditText passwordField, String placeholder) {
-        // Устанавливаем Typeface для шрифта Lora
         Typeface loraTypeface = ResourcesCompat.getFont(passwordField.getContext(), R.font.lora);
-        passwordField.setTypeface(loraTypeface);
 
-        // Устанавливаем заглушку при запуске
         passwordField.setText(placeholder);
-        passwordField.setInputType(InputType.TYPE_CLASS_TEXT); // Отображаем текст как обычный
+        passwordField.setTypeface(loraTypeface);
+        passwordField.setInputType(InputType.TYPE_CLASS_TEXT);
+        passwordField.setTransformationMethod(null); // Текст видим
 
         passwordField.setOnFocusChangeListener((v, hasFocus) -> {
             if (hasFocus) {
-                // Очистить текст, если совпадает с заглушкой
                 if (passwordField.getText().toString().equals(placeholder)) {
                     passwordField.setText("");
+                    passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    passwordField.setTransformationMethod(PasswordTransformationMethod.getInstance()); // Скрываем
                 }
             } else {
-                // Вернуть заглушку, если пользователь ничего не ввел
                 if (passwordField.getText().toString().isEmpty()) {
                     passwordField.setText(placeholder);
-                    passwordField.setInputType(InputType.TYPE_CLASS_TEXT); // Отображать текст как обычный
-                    passwordField.setTypeface(loraTypeface); // Возвращаем шрифт Lora для заглушки
+                    passwordField.setInputType(InputType.TYPE_CLASS_TEXT);
+                    passwordField.setTransformationMethod(null); // Видимый текст
                 }
             }
-        });
-
-        // Добавляем слушатель для ввода текста
-        passwordField.addTextChangedListener(new TextWatcher() {
-            private boolean isPlaceholderCleared = false;
-
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // Если пользователь начинает ввод, убираем заглушку и включаем скрытие текста
-                if (!isPlaceholderCleared && s.toString().equals(placeholder)) {
-                    isPlaceholderCleared = true;
-                    passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    passwordField.setTypeface(loraTypeface); // Сохраняем шрифт Lora для вводимого текста
-                    passwordField.setText(""); // Убираем заглушку
-                }
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // Не требуется
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                // Не требуется
-            }
+            // Обязательно восстанавливаем шрифт
+            passwordField.setTypeface(loraTypeface);
         });
     }
+
     // Проверка на наличие цифр
     private boolean containsDigit(String password) {
         return password.matches(".*\\d.*");

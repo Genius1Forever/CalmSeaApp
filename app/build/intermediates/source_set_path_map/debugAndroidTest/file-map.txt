@@ -1,0 +1,6 @@
+com.example.calmsea.test.app-androidTest-0 C:\CalmSeaApp\app\build\generated\res\resValues\androidTest\debug
+com.example.calmsea.test.app-mergeDebugAndroidTestResources-1 C:\CalmSeaApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.calmsea.test.app-mergeDebugAndroidTestResources-2 C:\CalmSeaApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.calmsea.test.app-merged_res-3 C:\CalmSeaApp\app\build\intermediates\merged_res\debugAndroidTest
+com.example.calmsea.test.app-jetified-annotation-experimental-1.3.0-4 C:\Users\Genius Forever\.gradle\caches\transforms-3\1e172a7074578cb55a59728f678dbf51\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.calmsea.test.app-jetified-core-1.5.0-5 C:\Users\Genius Forever\.gradle\caches\transforms-3\c0364c7032dbc1b1df0a747df803a724\transformed\jetified-core-1.5.0\res

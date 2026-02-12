@@ -4,14 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
-
-
 
     <application
         android:allowBackup="true"
@@ -23,8 +20,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalmSea"
         tools:targetApi="31">
-
-
+        <activity
+            android:name=".FullRecommendationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
         <activity
             android:name=".NoteEditActivity"
             android:exported="false" />

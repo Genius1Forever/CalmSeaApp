@@ -2,6 +2,7 @@ package com.example.calmsea;
 
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,14 +10,21 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.Timestamp;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class NotesPagerAdapter extends RecyclerView.Adapter<NotesPagerAdapter.NoteViewHolder> {
 
     private List<NoteModel> notes;
-    private OnNoteClickListener onNoteClickListener2;
+    private final OnNoteClickListener onNoteClickListener2;
 
     // Интерфейс для обработки кликов
     public interface OnNoteClickListener {
@@ -27,6 +35,11 @@ public class NotesPagerAdapter extends RecyclerView.Adapter<NotesPagerAdapter.No
     public NotesPagerAdapter(List<NoteModel> notes, OnNoteClickListener listener) {
         this.notes = notes;
         this.onNoteClickListener2 = listener;
+    }
+    public void updateNotes(List<NoteModel> newNotes) {
+        this.notes.clear();
+        this.notes.addAll(newNotes);
+        notifyDataSetChanged(); // <--- это важно
     }
 
     @NonNull
@@ -52,14 +65,38 @@ public class NotesPagerAdapter extends RecyclerView.Adapter<NotesPagerAdapter.No
         NoteModel note = notes.get(position);
         holder.moodTextView.setText(note.getMood());
         //holder.textTextView.setText(note.getNoteText());
-        holder.dateTextView.setText(note.getDate());
-        //holder.itemView.setBackgroundColor(Color.parseColor(note.getColor()));
+
+        // Получаем дату из Firestore
+        Timestamp timestamp = note.getDate(); // Предполагаем, что в модели NoteModel уже используется Timestamp
+        if (timestamp != null) {
+            Date date = timestamp.toDate(); // Преобразуем в Date
+
+            // Логируем значение dateChanged
+            Log.d("NotesAdapter", "Note ID: " + note.getId() + ", Date Changed: " + note.isDateChanged());
+
+            // Формат даты в зависимости от значения dateChanged
+            SimpleDateFormat dateFormat = new SimpleDateFormat(
+                    note.isDateChanged() ? "EEEE, dd MMMM yyyy" : "EEEE, dd MMMM yyyy, HH:mm",
+                    Locale.getDefault()
+            );
+            String formattedDate = dateFormat.format(date);
+
+            // Логируем отформатированную дату
+            Log.d("NotesAdapter", "Formatted Date: " + formattedDate);
+
+            holder.dateTextView.setText(formattedDate);
+        } else {
+            holder.dateTextView.setText("Нет даты");
+        }
+
+
+    //holder.itemView.setBackgroundColor(Color.parseColor(note.getColor()));
 
         // Проверяем, нужно ли показывать полный текст
         if (note.isExpanded()) {
             holder.textTextView.setText(note.getNoteText()); // Полный текст
         } else {
-            int maxTextLength = 40; // Лимит символов
+            int maxTextLength = 50; // Лимит символов
             String noteText = note.getNoteText();
             if (noteText.length() > maxTextLength) {
                 noteText = noteText.substring(0, maxTextLength) + "..."; // Обрезаем текст
@@ -111,6 +148,7 @@ public class NotesPagerAdapter extends RecyclerView.Adapter<NotesPagerAdapter.No
             dateTextView = itemView.findViewById(R.id.date_text_view);
         }
     }
+
 }
 
 

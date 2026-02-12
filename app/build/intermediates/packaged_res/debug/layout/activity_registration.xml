@@ -68,6 +68,21 @@
         app:layout_constraintStart_toStartOf="@id/guideline9"
         app:layout_constraintEnd_toEndOf="@id/guideline10"
         app:layout_constraintTop_toBottomOf="@id/edittext_reg_email"/>
+    <TextView
+        android:id="@+id/textView_Reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora"
+        android:ellipsize="none"
+        android:maxLines="10"
+        android:text="Длина пароля должна быть не менее 6 символов, содержать заглавную и строчную буквы, цифру и специальный символ."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:breakStrategy="simple"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintEnd_toEndOf="@id/guideline10"
+        app:layout_constraintTop_toBottomOf="@id/edittext_reg_password" />
     <EditText
         android:id="@+id/reg2password"
         android:layout_width="360dp"
@@ -76,10 +91,9 @@
         android:textSize="20sp"
         android:textColor="@color/black"
         android:fontFamily="@font/lora"
-        android:layout_margin="10dp"
         app:layout_constraintStart_toStartOf="@id/guideline9"
         app:layout_constraintEnd_toEndOf="@id/guideline10"
-        app:layout_constraintTop_toBottomOf="@id/edittext_reg_password"/>
+        app:layout_constraintTop_toBottomOf="@id/textView_Reg"/>
     <Button
         android:id="@+id/button_reg"
         android:layout_width="360dp"

@@ -4,9 +4,11 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 public class MoodChartView extends View {
@@ -34,6 +36,7 @@ public class MoodChartView extends View {
         linePaint.setStrokeWidth(8f);
         linePaint.setStyle(Paint.Style.STROKE);
         linePaint.setAntiAlias(true);
+        linePaint.setPathEffect(new CornerPathEffect(10f));
 
         // Настройки точек
         pointPaint = new Paint();
@@ -48,8 +51,8 @@ public class MoodChartView extends View {
 
         // Текст
         textPaint = new Paint();
-        textPaint.setColor(Color.DKGRAY);
-        textPaint.setTextSize(40f);
+        textPaint.setColor(Color.BLACK);
+        textPaint.setTextSize(35f);
         textPaint.setTextAlign(Paint.Align.CENTER);
     }
 
@@ -82,33 +85,45 @@ public class MoodChartView extends View {
                     chartPadding + i * cellWidth, height + chartPadding, gridPaint);
         }
 
-        // Рисуем линии графика
+        // Рисуем линии графика только между существующими точками
         Path path = new Path();
-        boolean started = false;
+        boolean firstPoint = true;
+        float prevX = 0, prevY = 0;
 
         for (int i = 0; i < moodValues.length; i++) {
-            if (moodValues[i] > 0) {
+            if (moodValues[i] > 0) {  // Проверяем, есть ли данные
                 float x = chartPadding + i * cellWidth;
-                float y = chartPadding + (4 - moodValues[i]) * cellHeight;
+                float y = chartPadding + (5 - moodValues[i]) * cellHeight;
 
-                if (!started) {
+                // Рисуем точку
+                canvas.drawCircle(x, y, 10, pointPaint);
+                Log.d("MoodChart", "Drawing point at: x=" + x + ", y=" + y);
+
+                // Если это первая точка, начинаем путь
+                if (firstPoint) {
                     path.moveTo(x, y);
-                    started = true;
+                    firstPoint = false;
                 } else {
+                    // Соединяем с предыдущей точкой
                     path.lineTo(x, y);
                 }
 
-                // Рисуем точки
-                canvas.drawCircle(x, y, 10, pointPaint);
+                // Запоминаем координаты текущей точки
+                prevX = x;
+                prevY = y;
             }
         }
 
+// Отрисовываем линии только если есть хотя бы одна точка
+        if (!firstPoint) {
+            canvas.drawPath(path, linePaint);
+        }
         canvas.drawPath(path, linePaint);
 
         // Рисуем дни недели
         for (int i = 0; i < days.length; i++) {
             float x = chartPadding + i * cellWidth;
-            float y = getHeight() - 30;
+            float y = getHeight() - 20;
             canvas.drawText(days[i], x, y, textPaint);
         }
     }

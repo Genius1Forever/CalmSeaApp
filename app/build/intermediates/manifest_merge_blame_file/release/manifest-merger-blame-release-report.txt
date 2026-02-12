@@ -1,0 +1,549 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.calmsea"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:7:5-76
+13-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:7:22-73
+14    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+14-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:8:5-76
+14-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:8:22-73
+15    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+15-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:9:5-71
+15-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:9:22-68
+16    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+16-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:10:5-74
+16-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:10:22-71
+17    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+17-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:11:5-74
+17-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:11:22-71
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+18-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:23:5-77
+18-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:23:22-74
+19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+19-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:24:5-68
+19-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:24:22-65
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:5-82
+20-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:22-79
+21    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+21-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:9:5-98
+21-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\505519719197c189bb95fc82497ce3cf\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:9:22-95
+22
+23    <permission
+23-->[androidx.core:core:1.9.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.calmsea.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.9.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.9.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.calmsea.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.9.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:13:5-61:19
+30        android:allowBackup="true"
+30-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:14:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.9.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\af630d06c3eb50711ec034ce2003cf5f\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+32        android:dataExtractionRules="@xml/data_extraction_rules"
+32-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:15:9-65
+33        android:extractNativeLibs="false"
+34        android:fullBackupContent="@xml/backup_rules"
+34-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:16:9-54
+35        android:icon="@mipmap/ic_launcher"
+35-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:17:9-43
+36        android:label="@string/app_name"
+36-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:18:9-41
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:19:9-54
+38        android:supportsRtl="true"
+38-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:20:9-35
+39        android:theme="@style/Theme.CalmSea" >
+39-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:21:9-45
+40        <activity
+40-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:23:9-25:40
+41            android:name="com.example.calmsea.FullRecommendationActivity"
+41-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:24:13-55
+42            android:exported="false" />
+42-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:25:13-37
+43        <activity
+43-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:26:9-28:40
+44            android:name="com.example.calmsea.SearchActivity"
+44-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:27:13-43
+45            android:exported="false" />
+45-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:28:13-37
+46        <activity
+46-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:29:9-31:40
+47            android:name="com.example.calmsea.NoteEditActivity"
+47-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:30:13-45
+48            android:exported="false" />
+48-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:31:13-37
+49        <activity
+49-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:32:9-34:40
+50            android:name="com.example.calmsea.EditActivity"
+50-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:33:13-41
+51            android:exported="false" />
+51-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:34:13-37
+52        <activity
+52-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:35:9-37:40
+53            android:name="com.example.calmsea.MoodQuestionActivity"
+53-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:36:13-49
+54            android:exported="false" />
+54-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:37:13-37
+55        <activity
+55-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:38:9-40:40
+56            android:name="com.example.calmsea.AddNoteActivity"
+56-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:39:13-44
+57            android:exported="false" />
+57-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:40:13-37
+58        <activity
+58-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:41:9-43:40
+59            android:name="com.example.calmsea.CalendarActivity"
+59-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:42:13-45
+60            android:exported="false" />
+60-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:43:13-37
+61        <activity
+61-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:44:9-46:40
+62            android:name="com.example.calmsea.RegistrationActivity"
+62-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:45:13-49
+63            android:exported="false" />
+63-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:46:13-37
+64        <activity
+64-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:47:9-49:40
+65            android:name="com.example.calmsea.AuthActivity"
+65-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:48:13-41
+66            android:exported="false" />
+66-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:49:13-37
+67        <activity
+67-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:50:9-59:20
+68            android:name="com.example.calmsea.WelcomeActivity"
+68-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:51:13-44
+69            android:exported="true"
+69-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:52:13-36
+70            android:theme="@style/Theme.Design.NoActionBar" >
+70-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:53:13-60
+71            <intent-filter>
+71-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:54:13-58:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:55:17-69
+72-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:55:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:57:17-77
+74-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:57:27-74
+75            </intent-filter>
+76        </activity>
+77        <activity android:name="com.example.calmsea.MainActivity" />
+77-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:60:9-50
+77-->C:\CalmSeaApp\app\src\main\AndroidManifest.xml:60:19-47
+78
+79        <service
+79-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:14:9-23:19
+80            android:name="com.google.firebase.components.ComponentDiscoveryService"
+80-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:15:13-84
+81            android:directBootAware="true"
+81-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+82            android:exported="false" >
+82-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:16:13-37
+83            <meta-data
+83-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:17:13-19:85
+84                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+84-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:18:17-122
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:19:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:20:13-22:85
+87                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+87-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:21:17-111
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\d6839873d8d8bddf6c2a1a1bae01599b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:22:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:69:13-71:85
+90                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+90-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:70:17-109
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:71:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+93                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+93-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+96                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+96-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-database:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\a761e8d71f113028760a9c2c70e2814e\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:57:13-59:85
+99                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+99-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:58:17-122
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:59:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:60:13-62:85
+102                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+102-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:61:17-119
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:62:17-82
+104            <meta-data
+104-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+105                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+105-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+108                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+108-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\ebf0dd7e24e838ea49603e44644277d9\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+111                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+111-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\268a9271edc921384ae6062b12d839d6\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+114                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+114-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+117                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+117-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\1be8c9dc6db82f785f4d0b783a2fd950\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+119        </service>
+120
+121        <activity
+121-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:29:9-46:20
+122            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+122-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:30:13-80
+123            android:excludeFromRecents="true"
+123-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:31:13-46
+124            android:exported="true"
+124-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:32:13-36
+125            android:launchMode="singleTask"
+125-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:33:13-44
+126            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+126-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:34:13-72
+127            <intent-filter>
+127-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:35:13-45:29
+128                <action android:name="android.intent.action.VIEW" />
+128-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+128-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+129
+130                <category android:name="android.intent.category.DEFAULT" />
+130-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+130-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+131                <category android:name="android.intent.category.BROWSABLE" />
+131-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+131-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+132
+133                <data
+133-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+134                    android:host="firebase.auth"
+134-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+135                    android:path="/"
+135-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+136                    android:scheme="genericidp" />
+136-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+137            </intent-filter>
+138        </activity>
+139        <activity
+139-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:47:9-64:20
+140            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+140-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:48:13-79
+141            android:excludeFromRecents="true"
+141-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:49:13-46
+142            android:exported="true"
+142-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:50:13-36
+143            android:launchMode="singleTask"
+143-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:51:13-44
+144            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+144-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:52:13-72
+145            <intent-filter>
+145-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:53:13-63:29
+146                <action android:name="android.intent.action.VIEW" />
+146-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+146-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+147
+148                <category android:name="android.intent.category.DEFAULT" />
+148-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+148-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+149                <category android:name="android.intent.category.BROWSABLE" />
+149-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+149-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+150
+151                <data
+151-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:41:17-44:51
+152                    android:host="firebase.auth"
+152-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:42:21-49
+153                    android:path="/"
+153-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:43:21-37
+154                    android:scheme="recaptcha" />
+154-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\5e68d46a97f7078e301260d5c29339cd\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:44:21-48
+155            </intent-filter>
+156        </activity>
+157
+158        <provider
+158-->[com.squareup.picasso:picasso:2.71828] C:\Users\Genius Forever\.gradle\caches\transforms-3\3417902c3d944c858485ec7661884ce4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+159            android:name="com.squareup.picasso.PicassoProvider"
+159-->[com.squareup.picasso:picasso:2.71828] C:\Users\Genius Forever\.gradle\caches\transforms-3\3417902c3d944c858485ec7661884ce4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+160            android:authorities="com.example.calmsea.com.squareup.picasso"
+160-->[com.squareup.picasso:picasso:2.71828] C:\Users\Genius Forever\.gradle\caches\transforms-3\3417902c3d944c858485ec7661884ce4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+161            android:exported="false" />
+161-->[com.squareup.picasso:picasso:2.71828] C:\Users\Genius Forever\.gradle\caches\transforms-3\3417902c3d944c858485ec7661884ce4\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+162
+163        <receiver
+163-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:29:9-40:20
+164            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+164-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:30:13-78
+165            android:exported="true"
+165-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:31:13-36
+166            android:permission="com.google.android.c2dm.permission.SEND" >
+166-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:32:13-73
+167            <intent-filter>
+167-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:33:13-35:29
+168                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+168-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:34:17-81
+168-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:34:25-78
+169            </intent-filter>
+170
+171            <meta-data
+171-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:37:13-39:40
+172                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+172-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:38:17-92
+173                android:value="true" />
+173-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:39:17-37
+174        </receiver>
+175        <!--
+176             FirebaseMessagingService performs security checks at runtime,
+177             but set to not exported to explicitly avoid allowing another app to call it.
+178        -->
+179        <service
+179-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:46:9-53:19
+180            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+180-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:47:13-82
+181            android:directBootAware="true"
+181-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:48:13-43
+182            android:exported="false" >
+182-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:49:13-37
+183            <intent-filter android:priority="-500" >
+183-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:50:13-52:29
+183-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:50:28-51
+184                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+184-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:51:17-78
+184-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\e164636a4250791a154680b69c343e33\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:51:25-75
+185            </intent-filter>
+186        </service>
+187        <service
+187-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+188            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+188-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+189            android:enabled="true"
+189-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+190            android:exported="false" >
+190-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+191            <meta-data
+191-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+192                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+192-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+193                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+193-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+194        </service>
+195
+196        <activity
+196-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+197            android:name="androidx.credentials.playservices.HiddenActivity"
+197-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+198            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+198-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+199            android:enabled="true"
+199-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+200            android:exported="false"
+200-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+201            android:fitsSystemWindows="true"
+201-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+202            android:theme="@style/Theme.Hidden" >
+202-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Genius Forever\.gradle\caches\transforms-3\b51b9e019311d96a0c507ff57ca7b360\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+203        </activity>
+204        <activity
+204-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+205            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+205-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+206            android:excludeFromRecents="true"
+206-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+207            android:exported="false"
+207-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+208            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+208-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+209        <!--
+210            Service handling Google Sign-In user revocation. For apps that do not integrate with
+211            Google Sign-In, this service will never be started.
+212        -->
+213        <service
+213-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+214            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+214-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+215            android:exported="true"
+215-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+216            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+216-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+217            android:visibleToInstantApps="true" />
+217-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\d7cbc1be84db6bb41636885c89c71f0f\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+218
+219        <provider
+219-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+220            android:name="com.google.firebase.provider.FirebaseInitProvider"
+220-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+221            android:authorities="com.example.calmsea.firebaseinitprovider"
+221-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+222            android:directBootAware="true"
+222-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+223            android:exported="false"
+223-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+224            android:initOrder="100" />
+224-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\f6ecdbb86e81ce8411d284b0169b45a1\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+225
+226        <activity
+226-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+227            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+227-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+228            android:exported="false"
+228-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+229            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+229-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\70a2f776994dacc723356136fc71901e\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+230
+231        <provider
+231-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+232            android:name="androidx.startup.InitializationProvider"
+232-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+233            android:authorities="com.example.calmsea.androidx-startup"
+233-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+234            android:exported="false" >
+234-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+235            <meta-data
+235-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+236                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+236-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+237                android:value="androidx.startup" />
+237-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\fcf002664ba79c1869dd119228dc2d56\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+238            <meta-data
+238-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+239                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+239-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+240                android:value="androidx.startup" />
+240-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Genius Forever\.gradle\caches\transforms-3\358e9a103e4d79486b8787118e98e7c9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+241            <meta-data
+241-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+242                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+242-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+243                android:value="androidx.startup" />
+243-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+244        </provider>
+245
+246        <meta-data
+246-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+247            android:name="com.google.android.gms.version"
+247-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+248            android:value="@integer/google_play_services_version" />
+248-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\7b17df20b80551c771710d0bfdb4756e\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+249
+250        <service
+250-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+251            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+251-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+252            android:exported="false" >
+252-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+253            <meta-data
+253-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+254                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+254-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+255                android:value="cct" />
+255-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\f7deb3d0df6b76c2893ea7105a572042\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+256        </service>
+257        <service
+257-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+258            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+258-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+259            android:exported="false"
+259-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+260            android:permission="android.permission.BIND_JOB_SERVICE" >
+260-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+261        </service>
+262
+263        <receiver
+263-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+264            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+264-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+265            android:exported="false" />
+265-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Genius Forever\.gradle\caches\transforms-3\726ab8eeefceec17b0a0f3252ccbfac2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+266        <receiver
+266-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+267            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+267-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+268            android:directBootAware="false"
+268-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+269            android:enabled="true"
+269-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+270            android:exported="true"
+270-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+271            android:permission="android.permission.DUMP" >
+271-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+272            <intent-filter>
+272-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+273                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+273-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+273-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+274            </intent-filter>
+275            <intent-filter>
+275-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+276                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+276-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+276-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+277            </intent-filter>
+278            <intent-filter>
+278-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+279                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+279-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+279-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+280            </intent-filter>
+281            <intent-filter>
+281-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+282                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+282-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+282-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Genius Forever\.gradle\caches\transforms-3\b7a772417aed3f7c30503b86ab0a705a\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+283            </intent-filter>
+284        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+285        <activity
+285-->[com.google.android.play:core-common:2.0.3] C:\Users\Genius Forever\.gradle\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+286            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+286-->[com.google.android.play:core-common:2.0.3] C:\Users\Genius Forever\.gradle\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:15:13-93
+287            android:exported="false"
+287-->[com.google.android.play:core-common:2.0.3] C:\Users\Genius Forever\.gradle\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:16:13-37
+288            android:stateNotNeeded="true"
+288-->[com.google.android.play:core-common:2.0.3] C:\Users\Genius Forever\.gradle\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:17:13-42
+289            android:theme="@style/Theme.PlayCore.Transparent" />
+289-->[com.google.android.play:core-common:2.0.3] C:\Users\Genius Forever\.gradle\caches\transforms-3\1a65fd7491d1e5289a7e972cea13666e\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:18:13-62
+290    </application>
+291
+292</manifest>

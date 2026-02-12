@@ -60,5 +60,8 @@ dependencies {
     implementation ("com.google.code.gson:gson:2.9.0")
     implementation ("com.google.firebase:firebase-messaging:23.1.1")
     implementation ("com.google.android.gms:play-services-auth:20.1.0")
+    //календарь
+    implementation ("com.prolificinteractive:material-calendarview:1.4.3")
 
+    debugImplementation ("com.squareup.leakcanary:leakcanary-android:2.12")
 }

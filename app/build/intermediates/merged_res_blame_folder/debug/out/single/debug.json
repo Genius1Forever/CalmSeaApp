@@ -24,12 +24,24 @@
         "source": "com.example.calmsea.app-main-7:/layout/activity_note_edit.xml"
     },
     {
+        "merged": "com.example.calmsea.app-merged_res-5:/layout_activity_full_recommendation.xml.flat",
+        "source": "com.example.calmsea.app-main-7:/layout/activity_full_recommendation.xml"
+    },
+    {
+        "merged": "com.example.calmsea.app-merged_res-5:/drawable_ic_rec.png.flat",
+        "source": "com.example.calmsea.app-main-7:/drawable/ic_rec.png"
+    },
+    {
         "merged": "com.example.calmsea.app-merged_res-5:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "com.example.calmsea.app-main-7:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_circle_background.xml.flat",
         "source": "com.example.calmsea.app-main-7:/drawable/circle_background.xml"
+    },
+    {
+        "merged": "com.example.calmsea.app-merged_res-5:/drawable_forever.png.flat",
+        "source": "com.example.calmsea.app-main-7:/drawable/forever.png"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/font_lora.ttf.flat",
@@ -40,6 +52,10 @@
         "source": "com.example.calmsea.app-main-7:/layout/activity_mood_question.xml"
     },
     {
+        "merged": "com.example.calmsea.app-merged_res-5:/drawable_border_text.xml.flat",
+        "source": "com.example.calmsea.app-main-7:/drawable/border_text.xml"
+    },
+    {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_back.png.flat",
         "source": "com.example.calmsea.app-main-7:/drawable/back.png"
     },
@@ -48,20 +64,12 @@
         "source": "com.example.calmsea.app-main-7:/drawable/ic_close.png"
     },
     {
-        "merged": "com.example.calmsea.app-merged_res-5:/drawable_ic_default.png.flat",
-        "source": "com.example.calmsea.app-main-7:/drawable/ic_default.png"
-    },
-    {
         "merged": "com.example.calmsea.app-merged_res-5:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "com.example.calmsea.app-main-7:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "com.example.calmsea.app-main-7:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.calmsea.app-merged_res-5:/drawable_default_avatar.jpg.flat",
-        "source": "com.example.calmsea.app-main-7:/drawable/default_avatar.jpg"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/layout_fragment_growth.xml.flat",
@@ -102,6 +110,10 @@
     {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_ic_launcher_background.xml.flat",
         "source": "com.example.calmsea.app-main-7:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.calmsea.app-merged_res-5:/layout_bottom_sheet_notes.xml.flat",
+        "source": "com.example.calmsea.app-main-7:/layout/bottom_sheet_notes.xml"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_icon_house.png.flat",
@@ -168,6 +180,10 @@
         "source": "com.example.calmsea.app-main-7:/drawable/icon_growth.png"
     },
     {
+        "merged": "com.example.calmsea.app-merged_res-5:/layout_activity_search.xml.flat",
+        "source": "com.example.calmsea.app-main-7:/layout/activity_search.xml"
+    },
+    {
         "merged": "com.example.calmsea.app-merged_res-5:/layout_activity_add_note.xml.flat",
         "source": "com.example.calmsea.app-main-7:/layout/activity_add_note.xml"
     },
@@ -182,6 +198,10 @@
     {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_button_background.xml.flat",
         "source": "com.example.calmsea.app-main-7:/drawable/button_background.xml"
+    },
+    {
+        "merged": "com.example.calmsea.app-merged_res-5:/drawable_search.png.flat",
+        "source": "com.example.calmsea.app-main-7:/drawable/search.png"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_ic_launcher_foreground.xml.flat",
@@ -216,6 +236,10 @@
         "source": "com.example.calmsea.app-main-7:/drawable/border_linearlayout.xml"
     },
     {
+        "merged": "com.example.calmsea.app-merged_res-5:/drawable_recommendation_bg.xml.flat",
+        "source": "com.example.calmsea.app-main-7:/drawable/recommendation_bg.xml"
+    },
+    {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_smile_face.png.flat",
         "source": "com.example.calmsea.app-main-7:/drawable/smile_face.png"
     },
@@ -236,6 +260,10 @@
         "source": "com.example.calmsea.app-main-7:/layout/activity_registration.xml"
     },
     {
+        "merged": "com.example.calmsea.app-merged_res-5:/drawable_edit_icon_background.xml.flat",
+        "source": "com.example.calmsea.app-main-7:/drawable/edit_icon_background.xml"
+    },
+    {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_edit.png.flat",
         "source": "com.example.calmsea.app-main-7:/drawable/edit.png"
     },
@@ -248,16 +276,16 @@
         "source": "com.example.calmsea.app-main-7:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.calmsea.app-merged_res-5:/drawable_ic_edit.png.flat",
+        "source": "com.example.calmsea.app-main-7:/drawable/ic_edit.png"
+    },
+    {
         "merged": "com.example.calmsea.app-merged_res-5:/color_bottom_nav_text_color.xml.flat",
         "source": "com.example.calmsea.app-main-7:/color/bottom_nav_text_color.xml"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/layout_activity_auth.xml.flat",
         "source": "com.example.calmsea.app-main-7:/layout/activity_auth.xml"
-    },
-    {
-        "merged": "com.example.calmsea.app-merged_res-5:/drawable_ic_default_avatar.png.flat",
-        "source": "com.example.calmsea.app-main-7:/drawable/ic_default_avatar.png"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_icon_lovely.png.flat",
@@ -274,6 +302,10 @@
     {
         "merged": "com.example.calmsea.app-merged_res-5:/drawable_welmsea1.jpg.flat",
         "source": "com.example.calmsea.app-main-7:/drawable/welmsea1.jpg"
+    },
+    {
+        "merged": "com.example.calmsea.app-merged_res-5:/drawable_background_gradient.xml.flat",
+        "source": "com.example.calmsea.app-main-7:/drawable/background_gradient.xml"
     },
     {
         "merged": "com.example.calmsea.app-merged_res-5:/layout_activity_calendar.xml.flat",

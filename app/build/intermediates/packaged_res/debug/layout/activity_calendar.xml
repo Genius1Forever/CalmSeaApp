@@ -31,17 +31,18 @@
         app:layout_constraintStart_toStartOf="@id/guideline16"
         app:layout_constraintTop_toTopOf="@id/guideline18"/>
     <!-- Календарь -->
-    <CalendarView
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         android:id="@+id/calendarView"
-        android:layout_width="match_parent"
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        app:titleTextAppearance="@style/CalendarTitleStyle"
         android:background="@drawable/calendar_background"
-        android:dateTextAppearance="@style/CalmSeaDateStyle"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="@color/teal_200"
         app:layout_constraintStart_toStartOf="@id/guideline16"
         app:layout_constraintEnd_toEndOf="@id/guideline17"
-        app:layout_constraintTop_toBottomOf="@id/textView_calendar"
-        />
+        app:layout_constraintTop_toBottomOf="@id/textView_calendar"/>
     <LinearLayout
         android:id="@+id/calendarAddNoteButton"
         android:layout_width="match_parent"
@@ -84,7 +85,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/plus"
-            android:tint="@color/calmsea_text_primary" />
+            android:tint="@color/white" />
     </LinearLayout>
 
 

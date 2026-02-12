@@ -93,7 +93,6 @@
             android:id="@+id/mood_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/btn_skip"
             android:layout_below="@id/tv_question"
             android:layout_marginTop="146dp"
             android:layout_marginBottom="273dp"
@@ -229,17 +228,6 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_skip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:text="Пропустить"
-            android:fontFamily="@font/lora"
-            android:textColor="@color/black" />
     </RelativeLayout>
 
     <androidx.constraintlayout.widget.Guideline

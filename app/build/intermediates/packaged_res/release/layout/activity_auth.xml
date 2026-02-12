@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth"
+    tools:context=".AuthActivity">
+
+
+    <TextView
+        android:id="@+id/text_name_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora"
+        android:text="CalmSea"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/guideline3"/>
+    <TextView
+        android:id="@+id/text_vhod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora"
+        android:text="Авторизация"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/text_name_auth"/>
+    <EditText
+        android:id="@+id/edittext_auth_email"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:text="Введите ваш email"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lora"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/text_vhod"/>
+    <EditText
+        android:id="@+id/edittext_auth_password"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:text="Введите пароль"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lora"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/edittext_auth_email"/>
+
+    <Button
+        android:id="@+id/button_auth"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF4A90E2"
+        android:fontFamily="@font/lora"
+        android:text="ВОЙТИ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/edittext_auth_password" />
+    <Button
+        android:id="@+id/button_for_reg"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:fontFamily="@font/lora"
+        android:text="У ВАС ЕЩЕ НЕТ АККАУНТА? ЗАРЕГИСТРИРУЙТЕСЬ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/button_auth"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="160dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="30dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

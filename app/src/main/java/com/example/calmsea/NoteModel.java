@@ -1,19 +1,25 @@
 package com.example.calmsea;
 
+import com.google.firebase.Timestamp;
+import com.google.firebase.database.Exclude;
+
 public class NoteModel {
+    @Exclude
     private String id;          // Уникальный идентификатор заметки
     private String noteText;    // Текст заметки
     private String mood;        // Настроение
-    private String date;        // Дата
+    private Timestamp date;        // Дата
     private String color;       // Цвет (если есть)
+    @Exclude
     private boolean isExpanded; // Новый флаг
+    private boolean dateChanged; // Флаг для отслеживания изменения даты
 
     // Геттеры и сеттеры для isExpanded
     public NoteModel() { // Конструктор без аргументов (обязательно для Firebase)
     }
 
     // Конструктор с параметрами (для удобного создания заметок)
-    public NoteModel(String id, String mood, String noteText, String date, String color) {
+    public NoteModel(String id, String mood, String noteText, Timestamp date, String color) {
         this.id = id;
         this.mood = mood;
         this.noteText = noteText;
@@ -48,11 +54,11 @@ public class NoteModel {
         this.noteText = noteText;
     }
 
-    public String getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 
@@ -62,6 +68,13 @@ public class NoteModel {
 
     public void setColor(String color) {
         this.color = color;
+    }
+    public boolean isDateChanged() {
+        return dateChanged;
+    }
+
+    public void setDateChanged(boolean dateChanged) {
+        this.dateChanged = dateChanged;
     }
 
 }

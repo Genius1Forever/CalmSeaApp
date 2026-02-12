@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".FullRecommendationActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/btn_back_rec"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/back"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@id/guideline52"
+        app:layout_constraintTop_toTopOf="@id/guideline54"/>
+    <TextView
+        android:id="@+id/tv_notes_title_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Твоя рекомендация 📖"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lora"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline52"
+        app:layout_constraintStart_toStartOf="@id/guideline53"
+        app:layout_constraintTop_toTopOf="@id/guideline54"/>
+    <TextView
+        android:id="@+id/fullRecommendationText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="15sp"
+        android:text="Рекомендации"
+        android:textColor="#2C3E50"
+        android:fontFamily="@font/lora"
+        android:lineSpacingExtra="6dp"
+        android:gravity="start"
+        android:elevation="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/recommendation_bg"
+        app:layout_constraintStart_toStartOf="@id/guideline52"
+        app:layout_constraintEnd_toEndOf="@id/guideline53"
+        app:layout_constraintTop_toBottomOf="@id/tv_notes_title_rec"/>
+    <ImageView
+        android:id="@+id/image_rec"
+        android:src="@drawable/forever"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline52"
+        app:layout_constraintEnd_toEndOf="@id/guideline53"
+        app:layout_constraintTop_toBottomOf="@id/fullRecommendationText"/>
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поделиться"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lora"
+        android:backgroundTint="#FF4A90E2"
+        android:onClick="shareRecommendation"
+        app:layout_constraintStart_toStartOf="@id/guideline52"
+        app:layout_constraintEnd_toEndOf="@id/guideline53"
+        app:layout_constraintTop_toBottomOf="@id/image_rec"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

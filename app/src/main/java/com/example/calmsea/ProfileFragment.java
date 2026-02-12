@@ -22,31 +22,30 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.ListenerRegistration;
 
 public class ProfileFragment extends Fragment {
 
-    private FirebaseAuth auth; private FirebaseFirestore db;
+    private FirebaseAuth auth;
+    private FirebaseFirestore db;
     private TextView profileNameTextView, profileEmailTextView, profileBirthDateTextView,
             profileGenderTextView, profilePhoneTextView, profileEntriesCountTextView, profileAverageMoodTextView;
-    private ImageView profileAvatarImageView; private Button logoutButton;
-    private String userId; private SharedViewModel sharedViewModel;
-    private TextView profileCountTextView; private TextView averageMoodTextView;
+    private ImageView profileAvatarImageView;
+    private Button logoutButton;
+    private String userId; private ListenerRegistration profileListener;
+    private SharedViewModel sharedViewModel;
+    private TextView profileCountTextView, averageMoodTextView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        // Inflate the fragment layout
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        // Инициализация ViewModel
         sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
-        // Инициализация Firebase
         auth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
-        // Получение текущего пользователя
         userId = auth.getCurrentUser() != null ? auth.getCurrentUser().getUid() : null;
 
-        // Привязка элементов интерфейса
         profileNameTextView = view.findViewById(R.id.profileNameTextView);
         profileEmailTextView = view.findViewById(R.id.profileEmailTextView);
         profileBirthDateTextView = view.findViewById(R.id.profileBirthdateTextView);
@@ -56,29 +55,24 @@ public class ProfileFragment extends Fragment {
         profileAverageMoodTextView = view.findViewById(R.id.profileMoodTextView);
         profileAvatarImageView = view.findViewById(R.id.profileAvatarImageView);
         logoutButton = view.findViewById(R.id.logoutButton);
+        profileCountTextView = view.findViewById(R.id.profileCountTextView);
+        averageMoodTextView = view.findViewById(R.id.profileMoodTextView);
 
         // Подписка на обновления ViewModel
         sharedViewModel.getDataUpdated().observe(getViewLifecycleOwner(), updated -> {
             if (Boolean.TRUE.equals(updated)) {
                 fetchDataFromFirestore();
-                sharedViewModel.setDataUpdated(false); // Сброс состояния
+                sharedViewModel.setDataUpdated(false);
             }
         });
 
-        // Загрузка данных при старте
+        // Первоначальная загрузка данных
         fetchDataFromFirestore();
-
-        loadUserData();
-        listenForProfileChanges(); // Добавленный Snapshot Listener
-
-        profileCountTextView = view.findViewById(R.id.profileCountTextView);
-        // Загрузка количества заметок
+        listenForProfileChanges();
         loadNoteCount();
-        // Среднее настроение
-        averageMoodTextView = view.findViewById(R.id.profileMoodTextView);
         loadAverageMood();
 
-        // Настройка кнопки выхода
+        // Кнопка выхода
         logoutButton.setOnClickListener(v -> {
             auth.signOut();
             Intent intent = new Intent(requireActivity(), AuthActivity.class);
@@ -86,6 +80,7 @@ public class ProfileFragment extends Fragment {
             requireActivity().finish();
         });
 
+        // Кнопка редактирования профиля
         ImageButton button = view.findViewById(R.id.btn_edit);
         button.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), EditActivity.class);
@@ -95,14 +90,18 @@ public class ProfileFragment extends Fragment {
         return view;
     }
 
-    /**
-     * Добавляем Firestore Snapshot Listener для автоматического обновления профиля
-     */
+    @Override
+    public void onResume() {
+        super.onResume();
+        fetchDataFromFirestore(); // Повторная загрузка данных при возвращении на экран
+        loadNoteCount();
+    }
+
     private void listenForProfileChanges() {
         if (userId == null) return;
 
         DocumentReference userRef = db.collection("users").document(userId);
-        userRef.addSnapshotListener((documentSnapshot, error) -> {
+        profileListener = userRef.addSnapshotListener((documentSnapshot, error) -> {
             if (error != null) {
                 Log.e("Firestore", "Ошибка при получении данных", error);
                 return;
@@ -110,38 +109,40 @@ public class ProfileFragment extends Fragment {
 
             if (documentSnapshot != null && documentSnapshot.exists()) {
                 User user = documentSnapshot.toObject(User.class);
-                if (user != null ) { // Проверка на активность фрагмента
+                if (user != null) {
                     profileNameTextView.setText(user.getName());
                     profileEmailTextView.setText(user.getEmail());
                     profileBirthDateTextView.setText(user.getBirthDate());
                     profileGenderTextView.setText(user.getGender());
-                    profilePhoneTextView.setText(user.getPhoneNumber());
 
-                    // Загружаем аватарку, если есть
+                    if (user.getPhoneNumber() != null && !user.getPhoneNumber().isEmpty()) {
+                        profilePhoneTextView.setText(user.getPhoneNumber());
+                        Log.d("ProfileFragment", "Обновленный номер: " + user.getPhoneNumber());
+                    }
+
                     if (user.getProfileImageUrl() != null && !user.getProfileImageUrl().isEmpty()) {
                         Glide.with(this)
                                 .load(user.getProfileImageUrl())
+                                .circleCrop()
                                 .into(profileAvatarImageView);
                     }
                 }
             }
-            if (documentSnapshot != null && documentSnapshot.exists()) {
-                String avatarUrl = documentSnapshot.getString("avatar");
-                Log.d("PROFILE_USER", "Обновленный аватар: " + avatarUrl);
-                if (avatarUrl != null) {
-                    Glide.with(requireContext())
-                            .load(avatarUrl)
-                            .placeholder(R.drawable.default_avatar)
-                            .error(R.drawable.default_avatar)
-                            .into(profileAvatarImageView);
-
-                }
-            }
         });
     }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
 
-    //получение текущего юзера
-    private void loadUserData() {
+        if (profileListener != null) {
+            profileListener.remove();
+            profileListener = null;
+        }
+    }
+
+    private void fetchDataFromFirestore() {
+        if (userId == null) return;
+
         db.collection("users").document(userId)
                 .get()
                 .addOnSuccessListener(document -> {
@@ -152,122 +153,52 @@ public class ProfileFragment extends Fragment {
                 .addOnFailureListener(e -> {
                     profileNameTextView.setText("Ошибка загрузки данных");
                 });
-
-        // Подписка на изменения в SharedViewModel
-        sharedViewModel.getDataUpdated().observe(getViewLifecycleOwner(), updated -> {
-            if (Boolean.TRUE.equals(updated)) { // Безопасная проверка на истину
-                db.collection("users").document(userId)
-                        .get()
-                        .addOnSuccessListener(this::updateUI)
-                        .addOnFailureListener(e -> {
-                            profileNameTextView.setText("Ошибка обновления данных");
-                        });
-                sharedViewModel.setDataUpdated(false); // Сбросить статус обновления
-            }
-        });
-
     }
-    //выведение данных на экран
-    private void updateUI(DocumentSnapshot document) {
-        String userName = document.getString("name");
-        String userEmail = document.getString("email");
-        String userAvatar = document.getString("avatar");
-        String userBirthDate = document.getString("birthDate");
-        String userGender = document.getString("gender");
-        String userPhone = document.getString("phone");
-        long entriesCount = document.getLong("entriesCount") != null ? document.getLong("entriesCount") : 0;
-        String averageMood = document.getString("averageMood");
 
-        profileNameTextView.setText(userName != null ? userName : "Не указано");
-        profileEmailTextView.setText(userEmail != null ? userEmail : "Не указан");
-        profileBirthDateTextView.setText(userBirthDate != null ? userBirthDate : "Не указана");
-        profileGenderTextView.setText(userGender != null ? userGender : "Не указан");
-        profilePhoneTextView.setText(userPhone != null ? userPhone : "Не указан");
+    private void updateUI(DocumentSnapshot document) {
+        profileNameTextView.setText(document.getString("name") != null ? document.getString("name") : "Не указано");
+        profileEmailTextView.setText(document.getString("email") != null ? document.getString("email") : "Не указан");
+        profileBirthDateTextView.setText(document.getString("birthDate") != null ? document.getString("birthDate") : "Не указана");
+        profileGenderTextView.setText(document.getString("gender") != null ? document.getString("gender") : "Не указан");
+        profilePhoneTextView.setText(document.getString("phone") != null ? document.getString("phone") : profilePhoneTextView.getText());
+
+        long entriesCount = document.getLong("entriesCount") != null ? document.getLong("entriesCount") : 0;
         profileEntriesCountTextView.setText(String.valueOf(entriesCount));
+
+        String averageMood = document.getString("averageMood");
         profileAverageMoodTextView.setText(averageMood != null ? averageMood : "Не указано");
 
-        if (userAvatar != null && !userAvatar.isEmpty()) {
+        String avatarUrl = document.getString("avatar");
+        if (avatarUrl != null && !avatarUrl.isEmpty()) {
             Glide.with(this)
-                    .load(userAvatar)
-                    .placeholder(R.drawable.default_avatar)
-                    .error(R.drawable.default_avatar)
+                    .load(avatarUrl)
+                    .circleCrop()
+                    .placeholder(R.drawable.user)
+                    .error(R.drawable.user)
                     .into(profileAvatarImageView);
         } else {
-            profileAvatarImageView.setImageResource(R.drawable.default_avatar);
+            profileAvatarImageView.setImageResource(R.drawable.user);
         }
     }
-    //выведение данных из бд
-    private void fetchDataFromFirestore() {
-        if (userId != null) {
-            db.collection("users").document(userId)
-                    .get()
-                    .addOnSuccessListener(document -> {
-                        if (document.exists()) {
-                            profileNameTextView.setText(document.getString("name"));
-                            profileEmailTextView.setText(document.getString("email"));
-                            profileBirthDateTextView.setText(document.getString("birthDate"));
-                            profileGenderTextView.setText(document.getString("gender"));
-                            profilePhoneTextView.setText(document.getString("phone"));
 
-                            // Загрузка аватара
-                            String avatarUrl = document.getString("avatar");
-                            if (avatarUrl != null && !avatarUrl.isEmpty()) {
-                                Glide.with(requireContext())
-                                        .load(avatarUrl)
-                                        .placeholder(R.drawable.default_avatar)
-                                        .error(R.drawable.default_avatar)
-                                        .into(profileAvatarImageView);
-                            } else {
-                                profileAvatarImageView.setImageResource(R.drawable.default_avatar);
-                            }
-                        }
-                    })
-                    .addOnFailureListener(e -> {
-                        profileNameTextView.setText("Ошибка загрузки данных");
-                    });
-        }
-    }
-    //вывод количества заметок
     private void loadNoteCount() {
         db.collection("users").document(userId)
                 .get()
                 .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        DocumentSnapshot document = task.getResult();
-                        if (document.exists()) {
-                            Long entriesCount = document.getLong("entriesCount");
-                            if (entriesCount != null) {
-                                profileCountTextView.setText(String.valueOf(entriesCount));
-                            } else {
-                                // Если noteCount не существует, инициализируем его значением 0
-                                db.collection("users").document(userId)
-                                        .update("noteCount", 0)
-                                        .addOnSuccessListener(aVoid -> {
-                                            profileCountTextView.setText("0");
-                                        })
-                                        .addOnFailureListener(e -> {
-                                            Log.w("Firestore", "Error initializing noteCount", e);
-                                        });
-                            }
-                        }
-                    } else {
-                        Log.w("Firestore", "Error getting user document", task.getException());
+                    if (task.isSuccessful() && task.getResult().exists()) {
+                        Long entriesCount = task.getResult().getLong("entriesCount");
+                        profileCountTextView.setText(entriesCount != null ? String.valueOf(entriesCount) : "0");
                     }
                 });
     }
-    //рассчитывается среднее настроение
+
     private void loadAverageMood() {
-        db.collection("users")
-                .document(userId)
+        db.collection("users").document(userId)
                 .get()
-                .addOnSuccessListener(documentSnapshot -> {
-                    if (documentSnapshot.exists()) {
-                        String averageMood = documentSnapshot.getString("averageMood");
-                        if (averageMood != null && !averageMood.isEmpty()) {
-                            averageMoodTextView.setText("" + averageMood);
-                        } else {
-                            averageMoodTextView.setText("Не рассчитано");
-                        }
+                .addOnSuccessListener(document -> {
+                    if (document.exists()) {
+                        String averageMood = document.getString("averageMood");
+                        averageMoodTextView.setText(averageMood != null ? averageMood : "Не рассчитано");
                     }
                 })
                 .addOnFailureListener(e -> {

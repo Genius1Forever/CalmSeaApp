@@ -7,6 +7,7 @@ import android.text.Editable;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,10 +26,17 @@ public class AuthActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auth);
 
         // Инициализация FirebaseAuth
         auth = FirebaseAuth.getInstance();
+
+        // ✅ Проверка, вошёл ли пользователь ранее
+        if (auth.getCurrentUser() != null) {
+            openMainActivity(); // если уже авторизован, переходим сразу
+            return;
+        }
+
+        setContentView(R.layout.activity_auth);
 
         // Привязка полей и кнопок к разметке
         emailEditText = findViewById(R.id.edittext_auth_email);
@@ -47,7 +55,6 @@ public class AuthActivity extends AppCompatActivity {
                     Toast.makeText(AuthActivity.this, "Заполните все поля", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
                 loginUser(email, password);
             }
         });
@@ -60,14 +67,10 @@ public class AuthActivity extends AppCompatActivity {
             }
         });
 
-
-        EditText emailEditText = findViewById(R.id.edittext_auth_email);
-        EditText passwordEditText = findViewById(R.id.edittext_auth_password);
-
         setEditTextPlaceholderBehavior(emailEditText, "Введите ваш email");
         configurePasswordField(passwordEditText, "Введите пароль");
-
     }
+
 
     // Метод для входа пользователя
     private void loginUser(String email, String password) {
@@ -113,54 +116,28 @@ public class AuthActivity extends AppCompatActivity {
         });
     }
     private void configurePasswordField(EditText passwordField, String placeholder) {
-        // Устанавливаем Typeface для шрифта Lora
         Typeface loraTypeface = ResourcesCompat.getFont(passwordField.getContext(), R.font.lora);
-        passwordField.setTypeface(loraTypeface);
 
-        // Устанавливаем заглушку при запуске
         passwordField.setText(placeholder);
-        passwordField.setInputType(InputType.TYPE_CLASS_TEXT); // Отображаем текст как обычный
+        passwordField.setTypeface(loraTypeface);
+        passwordField.setInputType(InputType.TYPE_CLASS_TEXT);
+        passwordField.setTransformationMethod(null); // Видимый текст (для заглушки)
 
         passwordField.setOnFocusChangeListener((v, hasFocus) -> {
             if (hasFocus) {
-                // Очистить текст, если совпадает с заглушкой
                 if (passwordField.getText().toString().equals(placeholder)) {
                     passwordField.setText("");
+                    passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    passwordField.setTransformationMethod(PasswordTransformationMethod.getInstance()); // Скрываем
                 }
             } else {
-                // Вернуть заглушку, если пользователь ничего не ввел
                 if (passwordField.getText().toString().isEmpty()) {
                     passwordField.setText(placeholder);
-                    passwordField.setInputType(InputType.TYPE_CLASS_TEXT); // Отображать текст как обычный
-                    passwordField.setTypeface(loraTypeface); // Возвращаем шрифт Lora для заглушки
+                    passwordField.setInputType(InputType.TYPE_CLASS_TEXT);
+                    passwordField.setTransformationMethod(null); // Открытый текст
                 }
             }
-        });
-
-        // Добавляем слушатель для ввода текста
-        passwordField.addTextChangedListener(new TextWatcher() {
-            private boolean isPlaceholderCleared = false;
-
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // Если пользователь начинает ввод, убираем заглушку и включаем скрытие текста
-                if (!isPlaceholderCleared && s.toString().equals(placeholder)) {
-                    isPlaceholderCleared = true;
-                    passwordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    passwordField.setTypeface(loraTypeface); // Сохраняем шрифт Lora для вводимого текста
-                    passwordField.setText(""); // Убираем заглушку
-                }
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // Не требуется
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                // Не требуется
-            }
+            passwordField.setTypeface(loraTypeface); // Восстановим шрифт всегда
         });
     }
 }

@@ -88,16 +88,37 @@
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/text_new"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:ellipsize="none"
+                android:fontFamily="@font/lora"
+                android:maxLines="10"
+                android:singleLine="false"
+                android:text="Добавляй заметки в дневник и рекомендация для тебя появится через некоторое время --->"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:background="@drawable/border_text"
+                app:layout_constraintEnd_toEndOf="@id/guideline13"
+                app:layout_constraintStart_toEndOf="@id/calendar_widget"
+                app:layout_constraintTop_toBottomOf="@id/greetingTextView" />
+
+            <TextView
                 android:id="@+id/textView_Recommendation"
                 android:layout_width="350dp"
-                android:layout_height="150dp"
+                android:layout_height="160dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/button_background"
                 android:fontFamily="@font/lora"
                 android:gravity="center"
                 android:text="Рекомендация отсутствует"
                 android:textColor="@color/black"
-                android:textSize="25sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/guideline13"
                 app:layout_constraintStart_toStartOf="@id/guideline12"
@@ -176,37 +197,37 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="8dp"
                 android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="@id/guideline12"
+
                 app:layout_constraintTop_toBottomOf="@id/dateRangeText"
-                >
+                tools:ignore="MissingConstraints">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/happy_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/smile_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/neutral_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/bad_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/crying_face"
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
@@ -215,13 +236,12 @@
             </LinearLayout>
             <com.example.calmsea.MoodChartView
                 android:id="@+id/moodChartView"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="350dp"
+                android:layout_height="280dp"
                 app:layout_constraintStart_toEndOf="@id/emotionsColumn"
                 app:layout_constraintTop_toBottomOf="@id/dateRangeText"
                 app:layout_constraintEnd_toEndOf="@id/guideline13"
                 app:layout_constraintBottom_toBottomOf="@id/guideline15" />
-
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline12"

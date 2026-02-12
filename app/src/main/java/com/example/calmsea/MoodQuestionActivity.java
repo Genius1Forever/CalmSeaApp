@@ -1,23 +1,28 @@
 package com.example.calmsea;
 
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
 public class MoodQuestionActivity extends AppCompatActivity {
-    // Добавить переменные для хранения выбранного настроения и цвета
     private String selectedMood = "";
     private String selectedDate;
+    private boolean isDateChanged = false; // Флаг, изменял ли пользователь дату
+    private static final int REQUEST_CODE_ADD_NOTE = 1001;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +39,10 @@ public class MoodQuestionActivity extends AppCompatActivity {
         findViewById(R.id.iv_mood_bad).setOnClickListener(v -> saveMoodAndProceed("Плохое"));
         findViewById(R.id.iv_mood_terrible).setOnClickListener(v -> saveMoodAndProceed("Ужасное"));
 
-        // Устанавливаем текущую дату
+        // Устанавливаем текущую дату с временем (если пользователь не меняет дату)
         selectedDate = new SimpleDateFormat("EEEE, dd MMMM yyyy, HH:mm", Locale.getDefault()).format(new Date());
+        isDateChanged = false; // Изначально дата не изменена
+
         TextView dateTextView = findViewById(R.id.tv_current_date);
         dateTextView.setText(selectedDate);
 
@@ -43,58 +50,72 @@ public class MoodQuestionActivity extends AppCompatActivity {
         ImageButton changeDateButton = findViewById(R.id.btn_change_date);
         changeDateButton.setOnClickListener(v -> showDatePickerDialog());
 
-        // Обработка кнопки "Пропустить"
-        Button btnSkip = findViewById(R.id.btn_skip);
-        btnSkip.setOnClickListener(v -> {
-            // Переход на AddNoteActivity без настроения
-            Intent intent = new Intent(MoodQuestionActivity.this, AddNoteActivity.class);
-            intent.putExtra("SELECTED_MOOD", selectedMood); // Передаем текущее настроение (если выбрано)
-            intent.putExtra("SELECTED_DATE", selectedDate); // Передаем текущую дату
-            startActivity(intent);
-            finish();
-        });
+
     }
 
     private void saveMoodAndProceed(String mood) {
-        selectedMood = mood; // Сохраняем выбранное настроение
-        sendMoodToAddNoteActivity(mood);
+        selectedMood = mood;
+        sendMoodToAddNoteActivity();
     }
 
-    private void sendMoodToAddNoteActivity(String mood) {
-        Intent intent = new Intent(MoodQuestionActivity.this, AddNoteActivity.class);
-        intent.putExtra("SELECTED_MOOD", mood); // Передаем настроение
-        intent.putExtra("SELECTED_DATE", selectedDate); // Передаем дату
-        startActivity(intent);
-        finish(); // Закрываем текущую активность
-    }
     private void showDatePickerDialog() {
-        // Получаем текущую дату
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
 
-        // Создаем DatePickerDialog
         DatePickerDialog datePickerDialog = new DatePickerDialog(this, (view, year1, month1, dayOfMonth) -> {
-            // Создаем объект Calendar и устанавливаем выбранную дату
             Calendar selectedCalendar = Calendar.getInstance();
             selectedCalendar.set(year1, month1, dayOfMonth);
 
-            // Форматируем дату
-            selectedDate = new SimpleDateFormat("EEEE, dd MMMM yyyy", Locale.getDefault())
-                    .format(selectedCalendar.getTime());
+            // Устанавливаем дату без времени
+            selectedDate = new SimpleDateFormat("EEEE, dd MMMM yyyy", Locale.getDefault()).format(selectedCalendar.getTime());
 
-            // Устанавливаем выбранную дату в TextView
             TextView dateTextView = findViewById(R.id.tv_current_date);
             dateTextView.setText(selectedDate);
+
+            isDateChanged = true; // Фиксируем, что дата изменена
+            Log.d("DatePicker", "Date changed by user. isDateChanged set to: " + isDateChanged);
         }, year, month, day);
 
-        // Устанавливаем максимальную дату на текущий день
         datePickerDialog.getDatePicker().setMaxDate(calendar.getTimeInMillis());
-
-        // Показываем диалог выбора даты
         datePickerDialog.show();
     }
+
+    private void sendMoodToAddNoteActivity() {
+        Intent intent = new Intent(MoodQuestionActivity.this, AddNoteActivity.class);
+        intent.putExtra("SELECTED_MOOD", selectedMood);
+
+        // Если дата была изменена пользователем, передаем без времени
+        intent.putExtra("SELECTED_DATE", selectedDate);
+        intent.putExtra("DATE_CHANGED", isDateChanged); // Передаем флаг
+        Log.d("MoodQuestionActivity", "Sending mood and date. isDateChanged: " + isDateChanged);
+
+        // Передаем результат дальше и завершаем MoodQuestionActivity
+        intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
+        finish();
+
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_CODE_ADD_NOTE && resultCode == RESULT_OK && data != null) {
+            boolean noteAdded = data.getBooleanExtra("note_added", false);
+            if (noteAdded) {
+                // Отправляем результат в HouseFragment
+                Intent intent = new Intent();
+                intent.putExtra("note_added", true);
+                setResult(Activity.RESULT_OK, intent);
+                finish();
+            }
+        }
+    }
 }
+
+
+
 
 

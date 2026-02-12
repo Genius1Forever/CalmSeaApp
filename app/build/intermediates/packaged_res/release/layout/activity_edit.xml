@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#91ceff"
+    tools:context=".EditActivity"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_back_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="@id/guideline36"
+                app:layout_constraintTop_toTopOf="@id/guideline38"/>
+            <TextView
+                android:id="@+id/textview_editprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lora"
+                android:text="Редактирование профиля"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/guideline36"
+                app:layout_constraintEnd_toEndOf="@id/guideline37"
+                app:layout_constraintTop_toTopOf="@id/guideline38" />
+        <FrameLayout
+            android:id="@+id/icon_rec"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline37"
+            app:layout_constraintStart_toStartOf="@id/guideline36"
+            app:layout_constraintTop_toBottomOf="@id/textview_editprofile">
+
+            <ImageView
+                android:id="@+id/editAvatarImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/user"
+                android:contentDescription="Аватар"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/editAvatarIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_edit"
+                android:background="@drawable/edit_icon_background"
+                android:padding="4dp"
+                android:contentDescription="Изменить аватар" />
+        </FrameLayout>
+
+            <TextView
+                android:id="@+id/textview_myself"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/lora"
+                android:text="О себе"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/guideline36"
+                app:layout_constraintTop_toBottomOf="@id/icon_rec" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_myself_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_linearlayout"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="@id/guideline37"
+                app:layout_constraintStart_toStartOf="@id/guideline36"
+                app:layout_constraintTop_toBottomOf="@id/textview_myself">
+
+                <!-- Контейнер для имени -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text="Имя"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Контейнер для даты рождения -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text="Дата рождения"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/editBirthdateTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text="Нажать, чтобы добавить"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Контейнер для пола -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text="Пол"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/editGenderTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text="Нажать, чтобы добавить"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Контактная информация -->
+            <TextView
+                android:id="@+id/textview_contactinf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/lora"
+                android:text="Контактная информация"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/guideline36"
+                app:layout_constraintTop_toBottomOf="@id/LinearLayout_myself_Edit" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_contactinf_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_linearlayout"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="@id/guideline37"
+                app:layout_constraintStart_toStartOf="@id/guideline36"
+                app:layout_constraintTop_toBottomOf="@id/textview_contactinf">
+
+                <!-- Контейнер для Email -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text="Email"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editEmailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text=""
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:importantForAutofill="no"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Контейнер для телефона -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:text="Телефон"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editPhoneEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lora"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:inputType="phone"
+                        android:maxLength="18"
+                        android:importantForAutofill="no"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/cancelButton_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FF4A90E2"
+                android:fontFamily="@font/lora"
+                android:text="Отменить"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="40dp"
+                app:layout_constraintStart_toStartOf="@id/guideline36"
+                app:layout_constraintEnd_toEndOf="@id/guideline37"
+                app:layout_constraintTop_toBottomOf="@id/LinearLayout_contactinf_Edit" />
+            <Button
+                android:id="@+id/saveButton_Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FF4A90E2"
+                android:fontFamily="@font/lora"
+                android:text="Сохранить"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="40dp"
+                app:layout_constraintStart_toStartOf="@id/guideline36"
+                app:layout_constraintEnd_toEndOf="@id/guideline37"
+                app:layout_constraintTop_toBottomOf="@id/cancelButton_Edit"
+                app:layout_constraintBottom_toBottomOf="@id/guideline39"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="10dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

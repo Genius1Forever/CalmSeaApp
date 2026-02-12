@@ -46,9 +46,12 @@
                 android:layout_height="100dp"
                 android:layout_margin="30dp"
                 android:scaleType="centerCrop"
+                android:background="@drawable/user"
+                android:layout_centerInParent="true"
                 app:layout_constraintStart_toStartOf="@id/guideline24"
                 app:layout_constraintEnd_toEndOf="@id/guideline25"
                 app:layout_constraintTop_toBottomOf="@id/textview_myprofile"/>
+
             <TextView
                 android:id="@+id/textview_myself"
                 android:layout_width="wrap_content"
@@ -116,6 +119,7 @@
                         android:id="@+id/profileBirthdateTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Не указано"
                         android:textSize="18sp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/lora" />
@@ -139,6 +143,7 @@
                         android:id="@+id/profileGenderTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Не указан"
                         android:textSize="18sp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/lora" />
@@ -179,7 +184,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Количество записей"
+                        android:text="Количество заметок"
                         android:textSize="16sp"
                         android:textColor="@color/primary_text_color"
                         android:fontFamily="@font/lora" />
@@ -285,6 +290,7 @@
                         android:id="@+id/profilePhoneTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Не указан"
                         android:textSize="18sp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/lora" />

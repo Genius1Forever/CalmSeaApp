@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +24,7 @@ import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.ListenerRegistration;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -46,12 +49,13 @@ import okhttp3.Response;
 public class EditActivity extends AppCompatActivity {
     private FirebaseFirestore firestore;
     private FirebaseAuth auth;
-    private EditText editNameEditText, editPhoneEditText, editEmailEditText;
-    private TextView editBirthdateTextView, editGenderTextView;
+    private EditText editNameEditText, editPhoneEditText;
+;
+    private TextView editBirthdateTextView, editGenderTextView, editEmailTextView;
     private ImageView editAvatarImageView;
     private Button saveButton, cancelButton;
     private Uri avatarUri;
-    private String userId;
+    private String userId; private ListenerRegistration userListenerRegistration;
     private SharedViewModel sharedViewModel;
     private ActivityResultLauncher<Intent> selectImageLauncher;
 
@@ -69,10 +73,11 @@ public class EditActivity extends AppCompatActivity {
         // Инициализация элементов интерфейса
         editNameEditText = findViewById(R.id.editNameEditText);
         editPhoneEditText = findViewById(R.id.editPhoneEditText);
+        setupPhoneMask(editPhoneEditText);
         editBirthdateTextView = findViewById(R.id.editBirthdateTextView);
         editGenderTextView = findViewById(R.id.editGenderTextView);
         editAvatarImageView = findViewById(R.id.editAvatarImageView);
-        editEmailEditText = findViewById(R.id.editEmailEditText);
+        editEmailTextView = findViewById(R.id.editEmailTextView);
         saveButton = findViewById(R.id.saveButton_Edit);
         cancelButton = findViewById(R.id.cancelButton_Edit);
 
@@ -88,12 +93,15 @@ public class EditActivity extends AppCompatActivity {
         editAvatarImageView.setOnClickListener(v -> openGallery());
 
         saveButton.setOnClickListener(v -> {
-            String email = editEmailEditText.getText().toString().trim();
-            String phone = editPhoneEditText.getText().toString().trim();
+            String email = editEmailTextView.getText().toString().trim();
+            String phone = editPhoneEditText.getText().toString().trim(); // Получаем строку с маской
+
+            // Очищаем телефон от всех символов, кроме цифр
+            String cleanPhone = phone.replaceAll("[^\\d]", "");
 
             if (!isValidEmail(email)) {
-                editEmailEditText.setError("Введите корректный email");
-            } else if (!isValidPhoneNumber(phone)) {
+                editEmailTextView.setError("Введите корректный email");
+            } else if (!cleanPhone.isEmpty() && !isValidPhoneNumber(phone)) {
                 editPhoneEditText.setError("Введите корректный номер телефона");
             } else {
                 saveUserData();
@@ -119,6 +127,7 @@ public class EditActivity extends AppCompatActivity {
                 });
 
         loadAvatarImage(userId, editAvatarImageView);
+
     }
 
     // Метод для подписки на изменения данных пользователя
@@ -126,7 +135,8 @@ public class EditActivity extends AppCompatActivity {
         if (userId == null) return;
 
         DocumentReference userRef = firestore.collection("users").document(userId);
-        userRef.addSnapshotListener((documentSnapshot, error) -> {
+
+        userListenerRegistration = userRef.addSnapshotListener((documentSnapshot, error) -> {
             if (error != null) {
                 Log.e("Firestore", "Ошибка при получении данных", error);
                 return;
@@ -136,12 +146,23 @@ public class EditActivity extends AppCompatActivity {
                 User user = documentSnapshot.toObject(User.class);
                 if (user != null) {
                     editNameEditText.setText(user.getName());
-                    editEmailEditText.setText(user.getEmail());
-                    editBirthdateTextView.setText(user.getBirthDate());
-                    editGenderTextView.setText(user.getGender());
-                    editPhoneEditText.setText(user.getPhoneNumber());
+                    editEmailTextView.setText(user.getEmail());
+                    String birthDate = user.getBirthDate();
+                    if (birthDate != null && !birthDate.trim().isEmpty()) {
+                        editBirthdateTextView.setText(birthDate);
+                    } else {
+                        editBirthdateTextView.setText("Нажать, чтобы добавить");
+                    }
+                    String gender = user.getGender();
+                    if (gender != null && !gender.trim().isEmpty()) {
+                        editGenderTextView.setText(gender);
+                    } else {
+                        editGenderTextView.setText("Нажать, чтобы добавить");
+                    }
+                    if (user.getPhoneNumber() != null) {
+                        editPhoneEditText.setText(user.getPhoneNumber());
+                    }
 
-                    // Загружаем аватарку, если она есть
                     if (user.getProfileImageUrl() != null && !user.getProfileImageUrl().isEmpty()) {
                         Glide.with(EditActivity.this)
                                 .load(user.getProfileImageUrl())
@@ -150,6 +171,13 @@ public class EditActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (userListenerRegistration != null) {
+            userListenerRegistration.remove();
+        }
     }
     private File uriToFile(Uri uri) {
         try {
@@ -182,7 +210,7 @@ public class EditActivity extends AppCompatActivity {
                 // Загружаем аватарку с помощью Glide
                 Glide.with(imageView.getContext())
                         .load(avatarUrl)
-                        .placeholder(R.drawable.default_avatar) // Место для аватарки по умолчанию
+                        .placeholder(R.drawable.user) // Место для аватарки по умолчанию
                         .into(imageView);
             }
         }).addOnFailureListener(e -> Log.e("Firestore", "Ошибка при загрузке аватарки: " + e.getMessage()));
@@ -190,9 +218,20 @@ public class EditActivity extends AppCompatActivity {
 
     // Метод для проверки валидности телефона
     private boolean isValidPhoneNumber(String phone) {
-        String regex = "^[7-8]?\\d{10}$";
-        return phone.matches(regex);
+        if (phone.isEmpty()) {
+            return true; // Если телефон не введен, считаем его корректным
+        }
+
+        // Удаляем все символы, кроме цифр, чтобы проверить только цифры
+        String cleanPhone = phone.replaceAll("[^\\d]", "");
+
+        // Регулярное выражение для номера с кодом страны +7 или 8, за которым идут 10 цифр
+        String regex = "^(?:7|8)?\\d{10}$";
+
+        return cleanPhone.matches(regex); // Проверка на соответствие формату
     }
+
+
     // Метод для проверки валидности email
     private boolean isValidEmail(String email) {
         String regex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$";
@@ -207,21 +246,26 @@ public class EditActivity extends AppCompatActivity {
                     .addOnSuccessListener(snapshot -> {
                         if (snapshot.exists()) {
                             editNameEditText.setText(snapshot.getString("name"));
-                            editPhoneEditText.setText(snapshot.getString("phone"));
                             editBirthdateTextView.setText(snapshot.getString("birthDate"));
                             editGenderTextView.setText(snapshot.getString("gender"));
-                            editEmailEditText.setText(snapshot.getString("email"));
+                            editEmailTextView.setText(snapshot.getString("email"));
 
+                            // Устанавливаем номер телефона только если он есть
+                            String phone = snapshot.getString("phone");
+                            if (phone != null) {
+                                editPhoneEditText.setText(phone);
+                            }
                             String avatarUrl = snapshot.getString("avatar");
                             if (avatarUrl != null) {
                                 Glide.with(this)
                                         .load(avatarUrl)
-                                        .placeholder(R.drawable.default_avatar)
-                                        .error(R.drawable.default_avatar)
+                                        .circleCrop()
+                                        .placeholder(R.drawable.user)
+                                        .error(R.drawable.user)
                                         .into(editAvatarImageView);
                             }
                             else {
-                                editAvatarImageView.setImageResource(R.drawable.default_avatar);
+                                editAvatarImageView.setImageResource(R.drawable.user);
                             }
                         }
                     })
@@ -318,8 +362,8 @@ public class EditActivity extends AppCompatActivity {
                     // Обновляем изображение в UI
                     runOnUiThread(() -> Glide.with(EditActivity.this)
                             .load(imageUrl)
-                            .placeholder(R.drawable.default_avatar)
-                            .error(R.drawable.default_avatar)
+                            .placeholder(R.drawable.user)
+                            .error(R.drawable.user)
                             .into(editAvatarImageView));
                 })
                 .addOnFailureListener(e -> Log.e("Firestore", "Ошибка обновления аватарки", e));
@@ -337,15 +381,17 @@ public class EditActivity extends AppCompatActivity {
         String phone = editPhoneEditText.getText().toString();
         String birthDate = editBirthdateTextView.getText().toString();
         String gender = editGenderTextView.getText().toString();
-        String email = editEmailEditText.getText().toString();
+        String email = editEmailTextView.getText().toString();
 
         Map<String, Object> updates = new HashMap<>();
         updates.put("name", name);
-        updates.put("phone", phone);
         updates.put("birthDate", birthDate);
         updates.put("gender", gender);
         updates.put("email", email);
-
+        // Сохраняем номер телефона, если он есть
+        if (!phone.isEmpty()) {
+            updates.put("phone", phone);
+        }
 
         firestore.collection("users").document(userId)
                 .update(updates)
@@ -356,6 +402,52 @@ public class EditActivity extends AppCompatActivity {
                     finish();
                 })
                 .addOnFailureListener(e -> Toast.makeText(this, "Ошибка обновления данных", Toast.LENGTH_SHORT).show());
+    }
+    private void setupPhoneMask(EditText editText) {
+        editText.addTextChangedListener(new TextWatcher() {
+            private boolean isEditing = false;
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (isEditing || s.length() < 3) {
+                    return;
+                }
+
+                isEditing = true;
+
+                String clean = s.toString().replaceAll("[^\\d]", ""); // Удаляем всё, кроме цифр
+
+                // Добавляем "+7" в начало, если номер начинается не с 7 или 8
+                if (clean.startsWith("8")) {
+                    clean = "7" + clean.substring(1);
+                } else if (!clean.startsWith("7")) {
+                    clean = "7" + clean;
+                }
+
+                // Ограничиваем длину номера
+                if (clean.length() > 11) {
+                    clean = clean.substring(0, 11);
+                }
+
+                // Форматируем в "+7 (XXX) XXX-XX-XX"
+                String formatted = "+7";
+                if (clean.length() > 1) formatted += " (" + clean.substring(1, Math.min(4, clean.length()));
+                if (clean.length() > 4) formatted += ") " + clean.substring(4, Math.min(7, clean.length()));
+                if (clean.length() > 7) formatted += "-" + clean.substring(7, Math.min(9, clean.length()));
+                if (clean.length() > 9) formatted += "-" + clean.substring(9);
+
+                editText.setText(formatted);
+                editText.setSelection(formatted.length()); // Ставим курсор в конец
+
+                isEditing = false;
+            }
+        });
     }
 
 }

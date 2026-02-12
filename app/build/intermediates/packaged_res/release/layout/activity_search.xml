@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98C4FF"
+    tools:context=".SearchActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back_search"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/back"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@id/guideline48"
+        app:layout_constraintTop_toTopOf="@id/guideline50"/>
+    <TextView
+        android:id="@+id/tv_notes_title_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заметки по данному запросу"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lora"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline48"
+        app:layout_constraintStart_toStartOf="@id/guideline49"
+        app:layout_constraintTop_toTopOf="@id/guideline50"/>
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#91ceff"
+        android:hint="Введите текст для поиска"
+        android:inputType="text"
+        android:fontFamily="@font/lora"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_notes_title_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResultsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchEditText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,71 +28,104 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/guideline28"
                 app:layout_constraintTop_toTopOf="@id/guideline30" />
+
             <TextView
-                android:id="@+id/dateRangeText"
+                android:id="@+id/dateRangeText1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Декабрь"
+                android:text="Месяц"
                 android:textColor="@color/black"
                 android:fontFamily="@font/lora"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="@id/guideline29"
                 app:layout_constraintStart_toStartOf="@id/guideline28"
                 app:layout_constraintTop_toBottomOf="@id/textView_Statistics" />
+
             <!-- Эмоции (иконки) -->
             <LinearLayout
-                android:id="@+id/emotionsColumn"
+                android:id="@+id/emotionsColumn1"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_marginStart="8dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="@id/guideline28"
-                app:layout_constraintTop_toBottomOf="@id/dateRangeText"
-                >
+                app:layout_constraintTop_toBottomOf="@id/dateRangeText1">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/happy_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/smile_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/neutral_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/bad_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/crying_face"
                     android:layout_margin="10dp"/>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/guideline29"
+                app:layout_constraintStart_toEndOf="@+id/emotionsColumn1"
+                app:layout_constraintTop_toBottomOf="@id/dateRangeText1">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="10dp"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.example.calmsea.MonthlyMoodChartView
+                            android:id="@+id/monthlymoodChartView"
+                            android:layout_width="355dp"
+                            android:layout_height="300dp"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/dateRangeText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="2024"
+                android:text="Год"
                 android:textColor="@color/black"
                 android:fontFamily="@font/lora"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="@id/guideline29"
                 app:layout_constraintStart_toStartOf="@id/guideline28"
-                app:layout_constraintTop_toBottomOf="@id/emotionsColumn" />
+                app:layout_constraintTop_toBottomOf="@id/emotionsColumn1" />
             <!-- Эмоции (иконки) -->
             <LinearLayout
                 android:id="@+id/emotionsColumn2"
@@ -104,39 +137,49 @@
                 app:layout_constraintTop_toBottomOf="@id/dateRangeText2">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/happy_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/smile_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/neutral_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/bad_face"
                     android:layout_margin="10dp"/>
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/crying_face"
                     android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="60dp"/>
+
             </LinearLayout>
 
+
+            <com.example.calmsea.HistogramView
+                android:id="@+id/histogramView"
+                android:layout_width="0dp"
+                android:layout_height="326dp"
+                app:layout_constraintStart_toEndOf="@id/emotionsColumn2"
+                app:layout_constraintTop_toTopOf="@id/dateRangeText2"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="0dp"/>
 
 
             <androidx.constraintlayout.widget.Guideline
@@ -144,7 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_begin="20dp" />
+                app:layout_constraintGuide_begin="10dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline29"
